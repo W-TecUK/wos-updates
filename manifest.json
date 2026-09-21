@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-21g",
-      "version": "1.0.143194170",
+      "id": "feature-2026-09-21h",
+      "version": "1.0.143194171",
       "kind": "feature",
-      "size": 85516,
-      "sha256": "7102d95c5533250541bb95902a5a124ff257be39e8bbf1daa8443844b178a2a5",
-      "signature": "7Dw7YsZ9bmas0GYQVB+jg1ZhiqeLOOJ//gPDOAw7Jeyr3y3UB8YyAAqiNppM6K7o2JGdPOH8FUripqVAGFpECQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21g.tar.gz",
-      "notes": "The Updates page now explains when a restart is needed before the next update, with a Restart button.",
+      "size": 85710,
+      "sha256": "213404d5a4396343c94092889de2c1b99bc64c41a1ba38da4cff080f53ca4bd1",
+      "signature": "eVeLz8m8qmE8ODNcJ17fccbcwC2cOJBkZr0oT+fhCByh/ElmRLMrDHm/64GZluYALDnfqtOYlzI8TSkdviGbDA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21h.tar.gz",
+      "notes": "The screen is the right size when W-OS starts in a virtual machine. The Updates page explains when a restart is needed before the next update.",
       "rollback_available": true
     }
   ]

@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-21c",
-      "version": "1.0.143194166",
+      "id": "feature-2026-09-21d",
+      "version": "1.0.143194167",
       "kind": "feature",
-      "size": 84272,
-      "sha256": "55aeae13a6fe16373f9d2f054dd85bc670f7ed768e4c4500a02d7d81f6abf414",
-      "signature": "k6z9HCEy8WNYVoOXkpiV81X2bCxQAqtuW6JEz0NQExsMpHrsYqP8rSP/VNB+hh968kC+iKcy+PkNkJfoQHZTCw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21c.tar.gz",
-      "notes": "Settings: search, accent colours, Desktop and Dock (wallpapers, dock size, clock), Notifications, Privacy and Security, Storage, Default apps. A more polished look across the apps.",
+      "size": 84335,
+      "sha256": "7c87d13be66b20a4c2466f91731f148520c6e7146f2e79f608230cb027bc3078",
+      "signature": "PsbcGntB8hLCfMsJ5f8OLp4trmYZv1s9N7tG3E2B3TOGZiE7TmrP8J10nfyYU4mmHLCo2Qo5e6gXssHnYvpODg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21d.tar.gz",
+      "notes": "Settings: search, accent colours, Desktop and Dock, Notifications, Privacy and Security, Storage, Default apps. The top bar shows a web app's own name. A more polished look across the apps.",
       "rollback_available": true
     }
   ]

@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-21h",
-      "version": "1.0.143194171",
+      "id": "feature-2026-09-21i",
+      "version": "1.0.143194172",
       "kind": "feature",
-      "size": 85710,
-      "sha256": "213404d5a4396343c94092889de2c1b99bc64c41a1ba38da4cff080f53ca4bd1",
-      "signature": "eVeLz8m8qmE8ODNcJ17fccbcwC2cOJBkZr0oT+fhCByh/ElmRLMrDHm/64GZluYALDnfqtOYlzI8TSkdviGbDA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21h.tar.gz",
-      "notes": "The screen is the right size when W-OS starts in a virtual machine. The Updates page explains when a restart is needed before the next update.",
+      "size": 93936,
+      "sha256": "ae24d0cb74b423d9a43295703d6b40934af7c8e5161ed3b90bfe4cdae29ce512",
+      "signature": "aJTMcgufDg+7+o7BuUc1kbtv22WRDT80x5+Fnybu7Y3L42vBR9MPNqwj9SwtwgiTN7xbFNhD8wdkYUCBWLW9Ag==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21i.tar.gz",
+      "notes": "New app icons: a smoother squircle shape and one consistent design across the dock, launcher and App Store.",
       "rollback_available": true
     }
   ]

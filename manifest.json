@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-21e",
-      "version": "1.0.143194168",
+      "id": "feature-2026-09-21f",
+      "version": "1.0.143194169",
       "kind": "feature",
-      "size": 85179,
-      "sha256": "45467847aed446a13c4b22d3bc179b41e968abd47ac220242ea07fe78585a0c9",
-      "signature": "ztz+ckJNvTeiLwHOQoxXOJ5xiFwODIav/7mDFiC2KiAyim479NjKUhkEfNC/8foYxqicZIi2BYW392z5QboYAw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21e.tar.gz",
-      "notes": "W-OS now tells you when an update is ready, with an Update button. Settings: search, accent colours, Desktop and Dock, Notifications, Privacy and Security, Storage, Default apps. A web app shows its own name in the top bar.",
+      "size": 85313,
+      "sha256": "ba3057b7d8f54f4dccbc924e50d82870185d28b17691e72e75fb471b8d01add9",
+      "signature": "pDJLvQKONtb1l3r/CNue0aRNRcoc0JDQ3Ow6EXtMHNYhRRs9nfEo39U55+1P8HXLY/vr/47zknqPBWE37qiWDQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21f.tar.gz",
+      "notes": "W-OS now tells you when an update is ready, with an Update button. The Updates page checks as soon as you open it. Settings: search, accent colours, Desktop and Dock, Notifications, Privacy and Security, Storage, Default apps.",
       "rollback_available": true
     }
   ]

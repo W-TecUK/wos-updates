@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-21i",
-      "version": "1.0.143194172",
+      "id": "feature-2026-09-21j",
+      "version": "1.0.143194173",
       "kind": "feature",
-      "size": 93936,
-      "sha256": "ae24d0cb74b423d9a43295703d6b40934af7c8e5161ed3b90bfe4cdae29ce512",
-      "signature": "aJTMcgufDg+7+o7BuUc1kbtv22WRDT80x5+Fnybu7Y3L42vBR9MPNqwj9SwtwgiTN7xbFNhD8wdkYUCBWLW9Ag==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21i.tar.gz",
-      "notes": "New app icons: a smoother squircle shape and one consistent design across the dock, launcher and App Store.",
+      "size": 102217,
+      "sha256": "4881445c5d8c675378282b2ddab360ae8eaf58f683b7b90f8297af9867a6e076",
+      "signature": "zmV+wVItsXmBfe1YbrQKuX9EYut0x4A5zUqUxvDotVA/2k2eofjVYX8Cgkzs1JzNeF3nxE/fYW4wIN8bvFwhBg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21j.tar.gz",
+      "notes": "A new lock screen (just the time and date, then the password screen when you touch a key) and more colourful app icons.",
       "rollback_available": true
     }
   ]

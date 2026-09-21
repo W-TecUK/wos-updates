@@ -1,0 +1,15 @@
+{
+  "packages": [
+    {
+      "id": "feature-2026-09-21",
+      "version": "1.0.143194164",
+      "kind": "feature",
+      "size": 40442,
+      "sha256": "432aafa5818d01b6e0d8828536721aeab2ee0319502298d3c65b81ad345dd776",
+      "signature": "WowxtKLKZs0AI8+fTnejAXNT5w3rPb1c2kvKzHIivEf1DEkuaxMBryCErcPgnPMOmsA+g/sKGwL1E/j35/XJBw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21.tar.gz",
+      "notes": "App Store scrolls and has Spotify and Microsoft apps, Phone Sync works with a new Android app, the desktop follows the window size in virtual machines.",
+      "rollback_available": true
+    }
+  ]
+}

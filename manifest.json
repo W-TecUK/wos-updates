@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-21j",
-      "version": "1.0.143194173",
+      "id": "feature-2026-09-21k",
+      "version": "1.0.143194174",
       "kind": "feature",
-      "size": 102217,
-      "sha256": "4881445c5d8c675378282b2ddab360ae8eaf58f683b7b90f8297af9867a6e076",
-      "signature": "zmV+wVItsXmBfe1YbrQKuX9EYut0x4A5zUqUxvDotVA/2k2eofjVYX8Cgkzs1JzNeF3nxE/fYW4wIN8bvFwhBg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21j.tar.gz",
-      "notes": "A new lock screen (just the time and date, then the password screen when you touch a key) and more colourful app icons.",
+      "size": 95294,
+      "sha256": "f9d914a828f322868d5349e06066686c144a3ef6c5fd27004e6d25e3234e37e0",
+      "signature": "PfdK+urQ7vpGdYTUB5l+fQdMI1NOz+YuMY2FB7UB80rUJhcFAIdwW1jS++BXGWCqEh5KMdYA1vm0grvo1FBbBg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21k.tar.gz",
+      "notes": "A new lock screen: just the time and date, then the password screen when you touch a key. Settings, App Store and update improvements.",
       "rollback_available": true
     }
   ]

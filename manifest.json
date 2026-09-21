@@ -4,9 +4,9 @@
       "id": "feature-2026-09-21b",
       "version": "1.0.143194165",
       "kind": "feature",
-      "size": 54418,
-      "sha256": "ef9fef9acb76448135468f45864d2e21f2a420de239b2f9354c67227e45a4337",
-      "signature": "gUj9XR04cUYyq8Re2GOCHHRWyNT2lohB6TAlj1PfD7lj8BlnDUcCyHiI+kbMGznR/+NMz7ZFxckSzKY7HZPWAg==",
+      "size": 57962,
+      "sha256": "9e0eab2e142d3e9f5d3477b8fde8b8a911501a57be560b24d44e91529c5a3eb9",
+      "signature": "UX9iww+mKxY8XQkwCeQy3ygOCSnaTS08wVs0nK+aRp3iLXtVTthqBqOoD7zR5FF6gQHSIKnHw9vGVTfAuC31Cw==",
       "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21b.tar.gz",
       "notes": "Real apps in the App Store (Spotify, Visual Studio Code, Microsoft Edge, Teams, GitHub Desktop) and app-style Microsoft 365, OneDrive, GitHub and VS Code for the Web. Phone Sync with a new Android app. The desktop follows the window size in virtual machines.",
       "rollback_available": true

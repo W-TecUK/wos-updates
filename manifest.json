@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-21k",
-      "version": "1.0.143194174",
+      "id": "feature-2026-09-21m",
+      "version": "1.0.143194175",
       "kind": "feature",
-      "size": 95294,
-      "sha256": "f9d914a828f322868d5349e06066686c144a3ef6c5fd27004e6d25e3234e37e0",
-      "signature": "PfdK+urQ7vpGdYTUB5l+fQdMI1NOz+YuMY2FB7UB80rUJhcFAIdwW1jS++BXGWCqEh5KMdYA1vm0grvo1FBbBg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21k.tar.gz",
-      "notes": "A new lock screen: just the time and date, then the password screen when you touch a key. Settings, App Store and update improvements.",
+      "size": 96472,
+      "sha256": "d7b73b5af88817101f1408b14c10332f15dffee124971804964fe06d2dca97ab",
+      "signature": "sUsbNBOmNao/T7KPzGndxEBfWJIVUqm/xrDHqoOBMVcY5FOtWT5/52wYQhFLvjix7pIln+LIxv7jdXkeUM26Cw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21m.tar.gz",
+      "notes": "New app icons: one clear shape per app, softer and more consistent.",
       "rollback_available": true
     }
   ]

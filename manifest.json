@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-21d",
-      "version": "1.0.143194167",
+      "id": "feature-2026-09-21e",
+      "version": "1.0.143194168",
       "kind": "feature",
-      "size": 84335,
-      "sha256": "7c87d13be66b20a4c2466f91731f148520c6e7146f2e79f608230cb027bc3078",
-      "signature": "PsbcGntB8hLCfMsJ5f8OLp4trmYZv1s9N7tG3E2B3TOGZiE7TmrP8J10nfyYU4mmHLCo2Qo5e6gXssHnYvpODg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21d.tar.gz",
-      "notes": "Settings: search, accent colours, Desktop and Dock, Notifications, Privacy and Security, Storage, Default apps. The top bar shows a web app's own name. A more polished look across the apps.",
+      "size": 85179,
+      "sha256": "45467847aed446a13c4b22d3bc179b41e968abd47ac220242ea07fe78585a0c9",
+      "signature": "ztz+ckJNvTeiLwHOQoxXOJ5xiFwODIav/7mDFiC2KiAyim479NjKUhkEfNC/8foYxqicZIi2BYW392z5QboYAw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21e.tar.gz",
+      "notes": "W-OS now tells you when an update is ready, with an Update button. Settings: search, accent colours, Desktop and Dock, Notifications, Privacy and Security, Storage, Default apps. A web app shows its own name in the top bar.",
       "rollback_available": true
     }
   ]

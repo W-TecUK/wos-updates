@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-22d",
-      "version": "1.0.143194179",
+      "id": "feature-2026-09-22e",
+      "version": "1.0.143194180",
       "kind": "feature",
-      "size": 7302,
-      "sha256": "eccf5bf28d48c1810ba21a471557fb7859e64572b4431a52edb7993c6fae334d",
-      "signature": "O6wjhBpFBjQsdNJ0OoCSOI5C5PYH4WNWOC+UJxmjR9VG2AxKnLycm7hfutGhEJ4hiOofO0oPCFtBdJ6LSHmCBw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22d.tar.gz",
-      "notes": "Windows app support: open a .exe file and it just runs. Wine sets itself up the one time it's needed, quietly.",
+      "size": 887931,
+      "sha256": "e8a0d1d3d18fb819681e9939b033f929908c529c3e2cc399d74a8770699c37e2",
+      "signature": "GxsE9KzD4CY1+Hc2xMhYswded7io51YLqFxK5kr+TjyGwBYqJcULkaz52w82dGswZZaHCnhereMDs4D4NHcFCA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22e.tar.gz",
+      "notes": "Catch-up update: makes sure everyone is fully up to date, no matter which earlier version you're on. Includes all recent features: new icons, desktop files/folders/Bin/widgets, brightness fix, Notification Centre, Bluetooth, and Windows app (.exe) support.",
       "rollback_available": true
     }
   ]

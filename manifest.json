@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-22c",
-      "version": "1.0.143194178",
+      "id": "feature-2026-09-22d",
+      "version": "1.0.143194179",
       "kind": "feature",
-      "size": 33235,
-      "sha256": "4a4e127966e94be93bc6277afb828428d2cefed94b03370284d829e43f59ab7d",
-      "signature": "Mde2oQWNgaF0ANW1cPconbgQ2VhNSDNeuzzexvEuV2O7i02dfuc08r2PSZJO8K3RmylMe7WiNt3oV21xSg0cBQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22c.tar.gz",
-      "notes": "Bluetooth: a quick toggle and your paired devices from the menu bar, next to Wi-Fi.",
+      "size": 7302,
+      "sha256": "eccf5bf28d48c1810ba21a471557fb7859e64572b4431a52edb7993c6fae334d",
+      "signature": "O6wjhBpFBjQsdNJ0OoCSOI5C5PYH4WNWOC+UJxmjR9VG2AxKnLycm7hfutGhEJ4hiOofO0oPCFtBdJ6LSHmCBw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22d.tar.gz",
+      "notes": "Windows app support: open a .exe file and it just runs. Wine sets itself up the one time it's needed, quietly.",
       "rollback_available": true
     }
   ]

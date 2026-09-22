@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-21m",
-      "version": "1.0.143194175",
+      "id": "feature-2026-09-22a",
+      "version": "1.0.143194176",
       "kind": "feature",
-      "size": 96472,
-      "sha256": "d7b73b5af88817101f1408b14c10332f15dffee124971804964fe06d2dca97ab",
-      "signature": "sUsbNBOmNao/T7KPzGndxEBfWJIVUqm/xrDHqoOBMVcY5FOtWT5/52wYQhFLvjix7pIln+LIxv7jdXkeUM26Cw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-21m.tar.gz",
-      "notes": "New app icons: one clear shape per app, softer and more consistent.",
+      "size": 64041,
+      "sha256": "6fb019741a4d18adb1c32ccf9e33132ad9dcf93b6ed65af9f7f391ca28515c45",
+      "signature": "IZzJo4KgSiYX97hmE6my1YXdW2PLM0uJWdeopNJh5dZ6BQZdBbLUZG+Q2JneOvcJRSNzIoBqn11iW/4C3RCzAQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22a.tar.gz",
+      "notes": "Desktop: files, folders and the Bin (Bin only by default), plus Clock, Calendar, Notes and Battery/Wi-Fi widgets.",
       "rollback_available": true
     }
   ]

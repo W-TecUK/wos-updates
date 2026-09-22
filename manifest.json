@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-22g",
-      "version": "1.0.143194182",
+      "id": "feature-2026-09-22h",
+      "version": "1.0.143194183",
       "kind": "feature",
-      "size": 889506,
-      "sha256": "ee6b60b6c98bd41cfa67ba4454778832e0b0d3e17f629a303f400f39963a1af4",
-      "signature": "HDMyiSkWksG5jeQqeeC0RjTSDRbR1o5S6/6JY7BM51xF2zvtJ4XRfUloNd8CQqnuZlYIBUiugJzuhDAA0rnCCg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22g.tar.gz",
-      "notes": "Windows app support: refuses cleanly with a clear reason if there isn't enough disk space, instead of hanging.",
+      "size": 891105,
+      "sha256": "05ce3a396556a307c2294fed7889a27f48e0de7b3e43b8550e66970a6a0a4c59",
+      "signature": "HmUjz6ie2vfMjIYEEj8Pk0Ftr8HZN0A0ENBiN9w6IkMfxMSBu7A1to+YmS0m51iMBJFXcU8eM8znZhB0OaVHCA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22h.tar.gz",
+      "notes": "App Store: opt-in, experimental real Microsoft Office (Word, Excel, PowerPoint, Outlook, OneNote) through Windows App Support. Not installed by default; the web apps remain the default.",
       "rollback_available": true
     }
   ]

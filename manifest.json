@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-22b",
-      "version": "1.0.143194177",
+      "id": "feature-2026-09-22c",
+      "version": "1.0.143194178",
       "kind": "feature",
-      "size": 42312,
-      "sha256": "f2999cd28beccacd68dcefcaf9f543d722d11fcb58017724a1f741decdbf502a",
-      "signature": "N0y2mwGXd/vGJ23xv70qiuSA9ytRcm2F2mQOulKP4oncUzNXfl0EZ7+z3ns49DrFlVEU6z5ulynkRY3dZECQDg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22b.tar.gz",
-      "notes": "Brightness now works everywhere, even without a hardware backlight. Click the clock for the time to the second, today's calendar events and your notifications.",
+      "size": 33235,
+      "sha256": "4a4e127966e94be93bc6277afb828428d2cefed94b03370284d829e43f59ab7d",
+      "signature": "Mde2oQWNgaF0ANW1cPconbgQ2VhNSDNeuzzexvEuV2O7i02dfuc08r2PSZJO8K3RmylMe7WiNt3oV21xSg0cBQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22c.tar.gz",
+      "notes": "Bluetooth: a quick toggle and your paired devices from the menu bar, next to Wi-Fi.",
       "rollback_available": true
     }
   ]

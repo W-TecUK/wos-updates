@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-22a",
-      "version": "1.0.143194176",
+      "id": "feature-2026-09-22b",
+      "version": "1.0.143194177",
       "kind": "feature",
-      "size": 64041,
-      "sha256": "6fb019741a4d18adb1c32ccf9e33132ad9dcf93b6ed65af9f7f391ca28515c45",
-      "signature": "IZzJo4KgSiYX97hmE6my1YXdW2PLM0uJWdeopNJh5dZ6BQZdBbLUZG+Q2JneOvcJRSNzIoBqn11iW/4C3RCzAQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22a.tar.gz",
-      "notes": "Desktop: files, folders and the Bin (Bin only by default), plus Clock, Calendar, Notes and Battery/Wi-Fi widgets.",
+      "size": 42312,
+      "sha256": "f2999cd28beccacd68dcefcaf9f543d722d11fcb58017724a1f741decdbf502a",
+      "signature": "N0y2mwGXd/vGJ23xv70qiuSA9ytRcm2F2mQOulKP4oncUzNXfl0EZ7+z3ns49DrFlVEU6z5ulynkRY3dZECQDg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22b.tar.gz",
+      "notes": "Brightness now works everywhere, even without a hardware backlight. Click the clock for the time to the second, today's calendar events and your notifications.",
       "rollback_available": true
     }
   ]

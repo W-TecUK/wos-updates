@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-22f",
-      "version": "1.0.143194181",
+      "id": "feature-2026-09-22g",
+      "version": "1.0.143194182",
       "kind": "feature",
-      "size": 889104,
-      "sha256": "52ebe6063ab4a2c8c101bb36b5cdd282e208b90934461317e1534ac10320d8f8",
-      "signature": "ueJeEO0OKwCzXGW8bk/mRrjmEqWCvbDA1s6FJ0m6X+1Uf1N7EW8mAvFGt2UBTkdRojRXMZ3qfG/CahKT7lxGBA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22f.tar.gz",
-      "notes": "Microsoft 365 apps (Word, Excel, PowerPoint, Outlook, OneNote, the M365 portal) are ready to use from first login, no Store visit needed.",
+      "size": 889506,
+      "sha256": "ee6b60b6c98bd41cfa67ba4454778832e0b0d3e17f629a303f400f39963a1af4",
+      "signature": "HDMyiSkWksG5jeQqeeC0RjTSDRbR1o5S6/6JY7BM51xF2zvtJ4XRfUloNd8CQqnuZlYIBUiugJzuhDAA0rnCCg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22g.tar.gz",
+      "notes": "Windows app support: refuses cleanly with a clear reason if there isn't enough disk space, instead of hanging.",
       "rollback_available": true
     }
   ]

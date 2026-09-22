@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-22e",
-      "version": "1.0.143194180",
+      "id": "feature-2026-09-22f",
+      "version": "1.0.143194181",
       "kind": "feature",
-      "size": 887931,
-      "sha256": "e8a0d1d3d18fb819681e9939b033f929908c529c3e2cc399d74a8770699c37e2",
-      "signature": "GxsE9KzD4CY1+Hc2xMhYswded7io51YLqFxK5kr+TjyGwBYqJcULkaz52w82dGswZZaHCnhereMDs4D4NHcFCA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22e.tar.gz",
-      "notes": "Catch-up update: makes sure everyone is fully up to date, no matter which earlier version you're on. Includes all recent features: new icons, desktop files/folders/Bin/widgets, brightness fix, Notification Centre, Bluetooth, and Windows app (.exe) support.",
+      "size": 889104,
+      "sha256": "52ebe6063ab4a2c8c101bb36b5cdd282e208b90934461317e1534ac10320d8f8",
+      "signature": "ueJeEO0OKwCzXGW8bk/mRrjmEqWCvbDA1s6FJ0m6X+1Uf1N7EW8mAvFGt2UBTkdRojRXMZ3qfG/CahKT7lxGBA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22f.tar.gz",
+      "notes": "Microsoft 365 apps (Word, Excel, PowerPoint, Outlook, OneNote, the M365 portal) are ready to use from first login, no Store visit needed.",
       "rollback_available": true
     }
   ]

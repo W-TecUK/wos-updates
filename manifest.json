@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23a",
-      "version": "1.0.143194184",
+      "id": "feature-2026-09-23b",
+      "version": "1.0.143194185",
       "kind": "feature",
-      "size": 891394,
-      "sha256": "a9bc43a0a16b58c351bbe2323de499f28d8739256b41200468f7f9bf374fb948",
-      "signature": "pK3o4m29hQkGIaw8WF9u4gD4Ln6rbncUOmO+wu+E3ypcBJgEBW5cXVuBl99eBdHLO4Tmubrjk54YfmCU+qKaBg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23a.tar.gz",
-      "notes": "Wi-Fi password field is masked (was showing in cleartext); mounted drives now show up in Files.",
+      "size": 891633,
+      "sha256": "1af2c99962e56d5514515066b3279a683a6650e94448d8d608a6cc85feb8c89f",
+      "signature": "i5Q1VE/TzolrCr2zXYPzGmcodEGhFiPxeO/Aili8cagv4FusO5gLnTI2NZtgyOuiZ5rKHTIXVT2C7X1YSk8lCg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23b.tar.gz",
+      "notes": "Clock seconds now tick live when that setting is on. Wi-Fi network list scrolls instead of overflowing.",
       "rollback_available": true
     }
   ]

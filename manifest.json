@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23o",
-      "version": "1.1.8",
+      "id": "feature-2026-09-23p",
+      "version": "1.1.9",
       "kind": "feature",
-      "size": 899115,
-      "sha256": "f521665d15cdab6dbe99e27685315a681f6a2c56d7c00bc50375def04d43514b",
-      "signature": "kAZK9ow15FHWwcgff4IsAyBoy6EzYDESs1SGrE2SjjgzGNk4vHfq5BiPuTLkKF6cbbRS9Q9hPFVVwX+QVY+0BQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23o.tar.gz",
-      "notes": "Fix Failed to Pair / bluez InProgress error: the device list leaves discovery running (scan on), and bluez refuses to pair or connect while the adapter is scanning. Now stops scanning first.",
+      "size": 901287,
+      "sha256": "78e2ac6ca690f5369554c3dd4142dfc902fc12dfb484e8094df04cddd7b41357",
+      "signature": "f13bFi+DIhdAqPZSVudO2fJA0amNz3sWwCnKNLCkij+U0SJ2JuEukWTbRMJz6iGptOSB7ZJu4b6rniQvF0ZtDA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23p.tar.gz",
+      "notes": "Firefox title bar is clear: fixed for real by using a normal window titlebar instead of Firefox's own CSD strip (and widened the update allow-list so this and the GTK theme fix can actually reach devices). Store app details on click. Password fields get a show/hide eye toggle (Wi-Fi, admin, lock screen). Bluetooth device list in the status panel now scrolls.",
       "rollback_available": true
     }
   ]

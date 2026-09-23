@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23n",
-      "version": "1.1.7",
+      "id": "feature-2026-09-23o",
+      "version": "1.1.8",
       "kind": "feature",
-      "size": 899098,
-      "sha256": "479469a00488c2a68dd8aac8a2344806f8917c89268d32ae766df0593e136c52",
-      "signature": "st1tJnjuPYvPJxAjqllLqWpNsDm7ASQHbB2T6G2n6odYL+gjMW/Cg81x2Z9+ak4merrPFaaOzF1Fl2DLI7mDCw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23n.tar.gz",
-      "notes": "Real fix for Pair reporting Done while the device stayed Not paired: bluetoothctl's exit code doesn't reflect whether bluez actually completed the operation, so we now check the device's real state afterwards. Also feed the pairing confirmation prompt yes on stdin -- with no terminal attached it was getting EOF and being silently treated as a rejection, failing pairing every time a device needed any confirmation.",
+      "size": 899115,
+      "sha256": "f521665d15cdab6dbe99e27685315a681f6a2c56d7c00bc50375def04d43514b",
+      "signature": "kAZK9ow15FHWwcgff4IsAyBoy6EzYDESs1SGrE2SjjgzGNk4vHfq5BiPuTLkKF6cbbRS9Q9hPFVVwX+QVY+0BQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23o.tar.gz",
+      "notes": "Fix Failed to Pair / bluez InProgress error: the device list leaves discovery running (scan on), and bluez refuses to pair or connect while the adapter is scanning. Now stops scanning first.",
       "rollback_available": true
     }
   ]

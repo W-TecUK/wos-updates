@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23p",
-      "version": "1.1.9",
+      "id": "feature-2026-09-23q",
+      "version": "1.1.10",
       "kind": "feature",
-      "size": 901287,
-      "sha256": "78e2ac6ca690f5369554c3dd4142dfc902fc12dfb484e8094df04cddd7b41357",
-      "signature": "f13bFi+DIhdAqPZSVudO2fJA0amNz3sWwCnKNLCkij+U0SJ2JuEukWTbRMJz6iGptOSB7ZJu4b6rniQvF0ZtDA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23p.tar.gz",
-      "notes": "Firefox title bar is clear: fixed for real by using a normal window titlebar instead of Firefox's own CSD strip (and widened the update allow-list so this and the GTK theme fix can actually reach devices). Store app details on click. Password fields get a show/hide eye toggle (Wi-Fi, admin, lock screen). Bluetooth device list in the status panel now scrolls.",
+      "size": 901409,
+      "sha256": "272d48c731551aa5b510535b72176e92d00ef72c4ab03116aca4e1db2fe59002",
+      "signature": "TNrinZgDcbTM8YkQvOlHyZUQQdnH3AN9J/XHg2EYdc9xyrUci8vj9d4rd7cnBO3Uaney5ESFWDPCvG8LqLyeCA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23q.tar.gz",
+      "notes": "Fix the menu bar needing two clicks every time: the bar and dock windows were focusable by default, so the window manager's click-to-focus consumed the first click just to focus the window and only the second click ever reached the menu. Neither window needs focus -- they're click-driven -- so this should now open on the first click, every time.",
       "rollback_available": true
     }
   ]

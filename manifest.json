@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23f",
-      "version": "1.0.143194189",
+      "id": "feature-2026-09-23g",
+      "version": "1.1.0",
       "kind": "feature",
-      "size": 894348,
-      "sha256": "b671c18946bcc35ed10c67d53c6f901ab07e8f7deaeb6e21a776d21dae34c9a9",
-      "signature": "1ugNuIl6IpdobtUqGYnENY0h0I2rtAOUO39cdczf1LsKP4gv6aqFnlNfGbut3fQE/R58NxNK48RigGNtrTLwDg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23f.tar.gz",
-      "notes": "Low Power Mode now really works on any existing install (it installs what it needs on the spot). Store installs show a real progress bar with the actual stage instead of just a static Installing\u2026 label.",
+      "size": 897257,
+      "sha256": "ae006023c8f1d19c0780a3cb8336fff7dd825f75628f1e8f3d85f367ab627d37",
+      "signature": "wokCyDxIW77880ooQZAGwT4xtJvExNasqBe5uszGAiq0T9n8rUHZ715kustTT0aWhW6elWBBHQAndT0X68LQDw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23g.tar.gz",
+      "notes": "W-OS 1.1.0: Music visualisation (Settings > Accessibility), Wi-Fi advanced settings (IPv4/MTU, Settings > Network), a real fix for a login/unlock hang, and a working Forgot Password link on the lock screen.",
       "rollback_available": true
     }
   ]

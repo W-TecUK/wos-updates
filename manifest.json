@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23l",
-      "version": "1.1.5",
+      "id": "feature-2026-09-23m",
+      "version": "1.1.6",
       "kind": "feature",
-      "size": 898873,
-      "sha256": "c9a895225226589597621d6703acb2018f405989742106212ee8df84d85e017a",
-      "signature": "G3g9I19z4mTv+PfrA23szJAv+DDCNWEZSAFN17ikq/eZErUKAN2zyyr9ZDKI1WCl8EoB4a8Ml4UDCndL5xD0Cg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23l.tar.gz",
-      "notes": "Temporary diagnostic for the Bluetooth name issue: Settings > Bluetooth now shows bluez's own raw device info on screen under each device, so it can be checked with a screenshot, no typing needed.",
+      "size": 898936,
+      "sha256": "f97a7dd4f2c7f312fde0865a8cc8c1b6aac20df3a4a050ad1773fecbb2a525be",
+      "signature": "9JCEZoDyYUR0FOTK7oN5lq5s0fEoWDcLPSEN0CTU9otOn4OpvZgreD63ofAn+B356Bsaa98jAw2EayuCrrYvDw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23m.tar.gz",
+      "notes": "Real fix for the Bluetooth name bug: bluez formats its no-name fallback address with hyphens, but the check compared it against the colon-separated address and never matched, so the hyphenated MAC got shown as a name. Fixed the comparison, and devices with no real advertised name now show as \"Unknown device\" (or \"Nearby Apple device\" for unnamed Apple BLE broadcasts) instead of a MAC address or being hidden.",
       "rollback_available": true
     }
   ]

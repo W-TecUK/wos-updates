@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-22h",
-      "version": "1.0.143194183",
+      "id": "feature-2026-09-23a",
+      "version": "1.0.143194184",
       "kind": "feature",
-      "size": 891105,
-      "sha256": "05ce3a396556a307c2294fed7889a27f48e0de7b3e43b8550e66970a6a0a4c59",
-      "signature": "HmUjz6ie2vfMjIYEEj8Pk0Ftr8HZN0A0ENBiN9w6IkMfxMSBu7A1to+YmS0m51iMBJFXcU8eM8znZhB0OaVHCA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-22h.tar.gz",
-      "notes": "App Store: opt-in, experimental real Microsoft Office (Word, Excel, PowerPoint, Outlook, OneNote) through Windows App Support. Not installed by default; the web apps remain the default.",
+      "size": 891394,
+      "sha256": "a9bc43a0a16b58c351bbe2323de499f28d8739256b41200468f7f9bf374fb948",
+      "signature": "pK3o4m29hQkGIaw8WF9u4gD4Ln6rbncUOmO+wu+E3ypcBJgEBW5cXVuBl99eBdHLO4Tmubrjk54YfmCU+qKaBg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23a.tar.gz",
+      "notes": "Wi-Fi password field is masked (was showing in cleartext); mounted drives now show up in Files.",
       "rollback_available": true
     }
   ]

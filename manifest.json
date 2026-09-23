@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23m",
-      "version": "1.1.6",
+      "id": "feature-2026-09-23n",
+      "version": "1.1.7",
       "kind": "feature",
-      "size": 898936,
-      "sha256": "f97a7dd4f2c7f312fde0865a8cc8c1b6aac20df3a4a050ad1773fecbb2a525be",
-      "signature": "9JCEZoDyYUR0FOTK7oN5lq5s0fEoWDcLPSEN0CTU9otOn4OpvZgreD63ofAn+B356Bsaa98jAw2EayuCrrYvDw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23m.tar.gz",
-      "notes": "Real fix for the Bluetooth name bug: bluez formats its no-name fallback address with hyphens, but the check compared it against the colon-separated address and never matched, so the hyphenated MAC got shown as a name. Fixed the comparison, and devices with no real advertised name now show as \"Unknown device\" (or \"Nearby Apple device\" for unnamed Apple BLE broadcasts) instead of a MAC address or being hidden.",
+      "size": 899098,
+      "sha256": "479469a00488c2a68dd8aac8a2344806f8917c89268d32ae766df0593e136c52",
+      "signature": "st1tJnjuPYvPJxAjqllLqWpNsDm7ASQHbB2T6G2n6odYL+gjMW/Cg81x2Z9+ak4merrPFaaOzF1Fl2DLI7mDCw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23n.tar.gz",
+      "notes": "Real fix for Pair reporting Done while the device stayed Not paired: bluetoothctl's exit code doesn't reflect whether bluez actually completed the operation, so we now check the device's real state afterwards. Also feed the pairing confirmation prompt yes on stdin -- with no terminal attached it was getting EOF and being silently treated as a rejection, failing pairing every time a device needed any confirmation.",
       "rollback_available": true
     }
   ]

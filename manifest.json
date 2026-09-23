@@ -1,15 +1,15 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23g",
-      "version": "1.1.0",
-      "kind": "feature",
-      "size": 897257,
-      "sha256": "ae006023c8f1d19c0780a3cb8336fff7dd825f75628f1e8f3d85f367ab627d37",
-      "signature": "wokCyDxIW77880ooQZAGwT4xtJvExNasqBe5uszGAiq0T9n8rUHZ715kustTT0aWhW6elWBBHQAndT0X68LQDw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23g.tar.gz",
-      "notes": "W-OS 1.1.0: Music visualisation (Settings > Accessibility), Wi-Fi advanced settings (IPv4/MTU, Settings > Network), a real fix for a login/unlock hang, and a working Forgot Password link on the lock screen.",
-      "rollback_available": true
+      "id": "feature-2026-09-23h",
+      "version": "1.1.1",
+      "kind": "security",
+      "size": 897955,
+      "sha256": "293e1711f274917169c05964c0f9708591933801392e2fd8e33d12c6326478d1",
+      "signature": "uAnqCZlINfq8NIEltPjIdJ/At6LJrMH7owO1Oq2lcbGMuTks1GLruszXoacSoidBEswpGPajX2FHKCivJO4EDw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23h.tar.gz",
+      "notes": "Real fix for the login/unlock skip: the real account was wrongly left in a group that lets some login services skip the password prompt entirely -- removed for new accounts and cleaned up automatically on existing ones. Music visualisation redesigned as one fluid glowing colour-shifting wave.",
+      "rollback_available": false
     }
   ]
 }

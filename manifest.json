@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23b",
-      "version": "1.0.143194185",
+      "id": "feature-2026-09-23c",
+      "version": "1.0.143194186",
       "kind": "feature",
-      "size": 891633,
-      "sha256": "1af2c99962e56d5514515066b3279a683a6650e94448d8d608a6cc85feb8c89f",
-      "signature": "i5Q1VE/TzolrCr2zXYPzGmcodEGhFiPxeO/Aili8cagv4FusO5gLnTI2NZtgyOuiZ5rKHTIXVT2C7X1YSk8lCg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23b.tar.gz",
-      "notes": "Clock seconds now tick live when that setting is on. Wi-Fi network list scrolls instead of overflowing.",
+      "size": 893037,
+      "sha256": "3790cae60c607a128437aa320bd364fd101195e704a67268d21de1660c03c607",
+      "signature": "tg2C9bm74klyEm+t/PJCCeMsI82ikzm4P9qKqQBaYhUkkrq3GLblOeAxDXKhJisqSG9VfaR5FFpKHGd+555bBw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23c.tar.gz",
+      "notes": "Hardware volume/brightness/mute keys now work, with an on-screen popup. Bluetooth devices show their real name instead of the MAC address.",
       "rollback_available": true
     }
   ]

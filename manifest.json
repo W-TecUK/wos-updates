@@ -1,15 +1,15 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23k",
-      "version": "1.1.4",
-      "kind": "security",
-      "size": 898746,
-      "sha256": "3940f91e67d5a3a4a28a42aa97bb017e48810cc8fce66561d9af4fd6d29ef3a3",
-      "signature": "iwM1Pnog05xHq9E1msdZ7EyyFkknyA95YK8P9naEQcdeGCYtSVvWg66LDhJekGtXi35qo1eol4jIA+ME/0RHAQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23k.tar.gz",
-      "notes": "Confirmed live on a real device: the account was permanently autologged in (autologin-user stuck in 60-wos-user.conf) because the one-time cleanup ran as a thread inside a daemon that kills itself before that cleanup could finish -- on every single first boot. Fixed to run as its own detached process, and a one-time repair cleans up accounts already stuck this way.",
-      "rollback_available": false
+      "id": "feature-2026-09-23l",
+      "version": "1.1.5",
+      "kind": "feature",
+      "size": 898873,
+      "sha256": "c9a895225226589597621d6703acb2018f405989742106212ee8df84d85e017a",
+      "signature": "G3g9I19z4mTv+PfrA23szJAv+DDCNWEZSAFN17ikq/eZErUKAN2zyyr9ZDKI1WCl8EoB4a8Ml4UDCndL5xD0Cg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23l.tar.gz",
+      "notes": "Temporary diagnostic for the Bluetooth name issue: Settings > Bluetooth now shows bluez's own raw device info on screen under each device, so it can be checked with a screenshot, no typing needed.",
+      "rollback_available": true
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23e",
-      "version": "1.0.143194188",
+      "id": "feature-2026-09-23f",
+      "version": "1.0.143194189",
       "kind": "feature",
-      "size": 893693,
-      "sha256": "19e1df7ead8455288c4f3dd649017b08137870e77ef884a2ea704a8f7bfdd2b5",
-      "signature": "bEyGm0oAVUkxP/3WfPgk7PRfzzYeveJELSd/YnMAvyaJ+XX+wrRO0jf96rKtmOjB48rKdtjfVLplqTCNruwiDA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23e.tar.gz",
-      "notes": "New Settings > Battery toggle: Low Power Mode. Needs power-profiles-daemon, which ships in a fresh install; on devices still on an older image it saves the setting but has no effect until a new ISO is installed.",
+      "size": 894348,
+      "sha256": "b671c18946bcc35ed10c67d53c6f901ab07e8f7deaeb6e21a776d21dae34c9a9",
+      "signature": "1ugNuIl6IpdobtUqGYnENY0h0I2rtAOUO39cdczf1LsKP4gv6aqFnlNfGbut3fQE/R58NxNK48RigGNtrTLwDg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23f.tar.gz",
+      "notes": "Low Power Mode now really works on any existing install (it installs what it needs on the spot). Store installs show a real progress bar with the actual stage instead of just a static Installing\u2026 label.",
       "rollback_available": true
     }
   ]

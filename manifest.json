@@ -1,15 +1,15 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23i",
-      "version": "1.1.2",
-      "kind": "feature",
-      "size": 898027,
-      "sha256": "d9a11bdb4505f2238933b2224ebcf08abad721aaf288306ac1d23b8e0e062754",
-      "signature": "65J/qc7BYhDULXuhM5pC6zmLbxbt67PgJ4VIFAT/WM+dZlT1nr6vnhuVgYlM+G5cawG/hg+7Hpq7vOfzQ0oGAg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23i.tar.gz",
-      "notes": "Bluetooth device names were still showing as MAC addresses in Settings > Bluetooth: that page uses its own separate backend method (bt_devices) which had the same bug the top-bar fix in 186 never touched. Fixed there too.",
-      "rollback_available": true
+      "id": "feature-2026-09-23j",
+      "version": "1.1.3",
+      "kind": "security",
+      "size": 898378,
+      "sha256": "7df00898f94695b8259873ae44724273c9010830c72067dc3ef0041f5698dd6d",
+      "signature": "4p+jF6IIYkCOQpAZuqLPFdXzwnRS3YHn/ga+6ldiKSDhspig6DPOnPddEAc7SsBz7Rel8/T7oSBMajBUYhZDDw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23j.tar.gz",
+      "notes": "Found the actual cause of the login/unlock skip: dm-tool lock returns almost instantly, well before the greeter has actually loaded, and suspend was allowed to proceed right after that instant call. Both the lid-close/idle-sleep path and the manual Sleep button now wait properly for the greeter before suspend proceeds.",
+      "rollback_available": false
     }
   ]
 }

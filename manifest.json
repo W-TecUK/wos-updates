@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23d",
-      "version": "1.0.143194187",
+      "id": "feature-2026-09-23e",
+      "version": "1.0.143194188",
       "kind": "feature",
-      "size": 893457,
-      "sha256": "a8845d37240a910e6cfc442df70b3306712181e1a5bc1ec846b45ede9b279902",
-      "signature": "TPWmeQV+GPi/hdg8HWdyy9Lxx20z2VchwENzqjTlV8DMTFczvqrTeCSUyTa3U9yD+HETmaY84d65ZHTPz9WzDQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23d.tar.gz",
-      "notes": "New Settings toggle: the menu bar and dock can now auto-hide while an app is full screen.",
+      "size": 893693,
+      "sha256": "19e1df7ead8455288c4f3dd649017b08137870e77ef884a2ea704a8f7bfdd2b5",
+      "signature": "bEyGm0oAVUkxP/3WfPgk7PRfzzYeveJELSd/YnMAvyaJ+XX+wrRO0jf96rKtmOjB48rKdtjfVLplqTCNruwiDA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23e.tar.gz",
+      "notes": "New Settings > Battery toggle: Low Power Mode. Needs power-profiles-daemon, which ships in a fresh install; on devices still on an older image it saves the setting but has no effect until a new ISO is installed.",
       "rollback_available": true
     }
   ]

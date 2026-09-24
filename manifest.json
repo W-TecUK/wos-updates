@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24h",
-      "version": "1.1.15",
+      "id": "feature-2026-09-24j",
+      "version": "1.1.17",
       "kind": "feature",
-      "size": 904874,
-      "sha256": "51d81348e4b37531c9f0ac5252d2cf0d8debea9e2c0a3493620c9d2bc1250b30",
-      "signature": "ewaPNzrDlwi2X9OPA5en+3ecuGEt9X58pRtQT02AxrdRuEdNfRi3NMj4J3J6IePfdT57kGjQ/qdom3qH4/F3AA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24h.tar.gz",
-      "notes": "Window snapping (Super+Arrow), configurable hot corners (Show Desktop/Lock/Apps), dock right-click menu (Open/Quit/Remove from Dock), and About shows Beta instead of ALPHA on beta-channel devices.",
+      "size": 905505,
+      "sha256": "b6512b944e2b863cc49e2066b79c86f83a2664ef53f8dafc0e5a869ea2dcc5a9",
+      "signature": "LRkQCKqGw37qMg7VNPsUxc4s6n3brTR1+qf6Z7zlydHq9OkNQnndsmUQd2ZPPY37R7I/rdVb1PwaY+3VAySQCg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24j.tar.gz",
+      "notes": "Fix: Super+Arrow window snap did nothing -- xfwm4 was winning the key-grab race against the shell. Now routed through xfconf, same as Super+Space.",
       "rollback_available": true
     }
   ]

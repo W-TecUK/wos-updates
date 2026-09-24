@@ -1,15 +1,15 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-23q",
+      "id": "feature-2026-09-24a",
       "version": "1.1.10",
-      "kind": "feature",
-      "size": 901409,
-      "sha256": "272d48c731551aa5b510535b72176e92d00ef72c4ab03116aca4e1db2fe59002",
-      "signature": "TNrinZgDcbTM8YkQvOlHyZUQQdnH3AN9J/XHg2EYdc9xyrUci8vj9d4rd7cnBO3Uaney5ESFWDPCvG8LqLyeCA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-23q.tar.gz",
-      "notes": "Fix the menu bar needing two clicks every time: the bar and dock windows were focusable by default, so the window manager's click-to-focus consumed the first click just to focus the window and only the second click ever reached the menu. Neither window needs focus -- they're click-driven -- so this should now open on the first click, every time.",
-      "rollback_available": true
+      "kind": "security",
+      "size": 899686,
+      "sha256": "83537aa06b2ec57131ef6776d84523af3247573c38f0f2f57e0f60d8948fb2da",
+      "signature": "jRz58xEvOvJZOCJE3kYJsNXKzCijPtpOkOl66dyxw4TQ1miN/E5cuCw4AkzwsglBX/nM1bxexVIu68K4ATCpDg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24a.tar.gz",
+      "notes": "Fix the menu bar needing two clicks every time: the bar and dock windows were focusable by default, so the window manager's click-to-focus consumed the first click just to focus the window and only the second click ever reached the menu. This also carries a bridge fix to the update system itself: a prior update tried to widen what files an update may change, but the OLD update-applier on your device couldn't accept the very file that would have widened it -- a chicken-and-egg bug that silently failed every install attempt. Fixed.",
+      "rollback_available": false
     }
   ]
 }

@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24n",
-      "version": "1.1.19",
+      "id": "feature-2026-09-24p",
+      "version": "1.1.20",
       "kind": "feature",
-      "size": 907319,
-      "sha256": "8c2445e887d79ed16ed31db36a302ffa177723c170daaa9db3f011aa233d6cb7",
-      "signature": "3RNJWXYGrHi/th9wQxu9Uhr/MmanFXWZCRqY5RFf+drk+vRVeLosC/SqwXatFWS9mC2eSPapUJrGWObEHeCODg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24n.tar.gz",
-      "notes": "Fix: the dock's right-click menu was clipped by the dock's own window, so only Remove from Dock was visible. Open/Quit now show correctly.",
+      "size": 909141,
+      "sha256": "fe8f379c450d50ac773e4460d9cd4dde84c539a441225da56328b13aec57e138",
+      "signature": "Ah8JA06DL+l5WpNu6fAUTaD921o/cacNrv1IJIjecB8spZDJOaxIpMhsM+ZZTB62wDYMyB3Jdd/+YlM/F2vOCQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24p.tar.gz",
+      "notes": "Fix: Store apt-installs (Writer, Calc, Impress, and others) could fail with 'Unable to locate package' since the package index was never refreshed first.",
       "rollback_available": true
     }
   ]

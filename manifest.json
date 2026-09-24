@@ -1,15 +1,15 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24a",
-      "version": "1.1.10",
-      "kind": "security",
-      "size": 899686,
-      "sha256": "83537aa06b2ec57131ef6776d84523af3247573c38f0f2f57e0f60d8948fb2da",
-      "signature": "jRz58xEvOvJZOCJE3kYJsNXKzCijPtpOkOl66dyxw4TQ1miN/E5cuCw4AkzwsglBX/nM1bxexVIu68K4ATCpDg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24a.tar.gz",
-      "notes": "Fix the menu bar needing two clicks every time: the bar and dock windows were focusable by default, so the window manager's click-to-focus consumed the first click just to focus the window and only the second click ever reached the menu. This also carries a bridge fix to the update system itself: a prior update tried to widen what files an update may change, but the OLD update-applier on your device couldn't accept the very file that would have widened it -- a chicken-and-egg bug that silently failed every install attempt. Fixed.",
-      "rollback_available": false
+      "id": "feature-2026-09-24b",
+      "version": "1.1.11",
+      "kind": "feature",
+      "size": 901908,
+      "sha256": "6c85bd6124ce73b8b2e5d68178c87d5e7e29d781db131c053343a30ffb06cd99",
+      "signature": "/5OKqN6SnmB909UqTUofJMvpOY0uHvGyj+5e36d1A7H58D2st7b0h61OCd4xGt15bY9hm87hwebuKDMBRpDmCw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24b.tar.gz",
+      "notes": "Autohidden bar/dock in full screen now come back when you move the pointer to the very top or bottom edge (same convention as macOS/Windows autohide) -- there was previously no way to get them back with nothing else to Alt-Tab to. Also fixed: the wallpaper and other permanent shell windows could be closed with Alt+F4; they can't be now.",
+      "rollback_available": true
     }
   ]
 }

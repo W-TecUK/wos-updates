@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24j",
-      "version": "1.1.17",
+      "id": "feature-2026-09-24l",
+      "version": "1.1.18",
       "kind": "feature",
-      "size": 905505,
-      "sha256": "b6512b944e2b863cc49e2066b79c86f83a2664ef53f8dafc0e5a869ea2dcc5a9",
-      "signature": "LRkQCKqGw37qMg7VNPsUxc4s6n3brTR1+qf6Z7zlydHq9OkNQnndsmUQd2ZPPY37R7I/rdVb1PwaY+3VAySQCg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24j.tar.gz",
-      "notes": "Fix: Super+Arrow window snap did nothing -- xfwm4 was winning the key-grab race against the shell. Now routed through xfconf, same as Super+Space.",
+      "size": 907105,
+      "sha256": "503b3b5a2c3c93f9d7981b363b55f6cd9164b32795fea26f918d9e075b044793",
+      "signature": "pOip1BH6GsWpqw3paWW3keVmXAEF+ES19mGMJTOoJNLXEzEI7pYMo2fdCtlrWYeiHeAegabjcPQTgSa6tNnCDA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24l.tar.gz",
+      "notes": "3 new Settings features: Night Light, a keyboard shortcuts reference, and Login Items (startup apps). Plus 2 tidy-ups: removed the duplicate computer-rename control, and a leftover string-replace on printers.list.",
       "rollback_available": true
     }
   ]

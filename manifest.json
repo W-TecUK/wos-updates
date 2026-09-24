@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24p",
-      "version": "1.1.20",
+      "id": "feature-2026-09-24r",
+      "version": "1.1.21",
       "kind": "feature",
-      "size": 909141,
-      "sha256": "fe8f379c450d50ac773e4460d9cd4dde84c539a441225da56328b13aec57e138",
-      "signature": "Ah8JA06DL+l5WpNu6fAUTaD921o/cacNrv1IJIjecB8spZDJOaxIpMhsM+ZZTB62wDYMyB3Jdd/+YlM/F2vOCQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24p.tar.gz",
-      "notes": "Fix: Store apt-installs (Writer, Calc, Impress, and others) could fail with 'Unable to locate package' since the package index was never refreshed first.",
+      "size": 909209,
+      "sha256": "f2861169d9e55de902f98414dfd3de5d02d22ddcdec23b6a1142e270022e6612",
+      "signature": "FS5wQ2vi9bYWeUu8/dv3Rs+VViu6YeKQYxRvUOQUSVF++cpOcUgyjnaqY8DQ9tybPcJZau+k0I/k7ieIXybzBA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24r.tar.gz",
+      "notes": "Fix: Writer/Calc/Impress installed but never appeared in search or the launcher -- launcher.json's libreoffice- hidden prefix was also hiding the real apps, not just LibreOffice's own noise.",
       "rollback_available": true
     }
   ]

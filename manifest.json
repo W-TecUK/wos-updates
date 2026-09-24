@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24l",
-      "version": "1.1.18",
+      "id": "feature-2026-09-24n",
+      "version": "1.1.19",
       "kind": "feature",
-      "size": 907105,
-      "sha256": "503b3b5a2c3c93f9d7981b363b55f6cd9164b32795fea26f918d9e075b044793",
-      "signature": "pOip1BH6GsWpqw3paWW3keVmXAEF+ES19mGMJTOoJNLXEzEI7pYMo2fdCtlrWYeiHeAegabjcPQTgSa6tNnCDA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24l.tar.gz",
-      "notes": "3 new Settings features: Night Light, a keyboard shortcuts reference, and Login Items (startup apps). Plus 2 tidy-ups: removed the duplicate computer-rename control, and a leftover string-replace on printers.list.",
+      "size": 907319,
+      "sha256": "8c2445e887d79ed16ed31db36a302ffa177723c170daaa9db3f011aa233d6cb7",
+      "signature": "3RNJWXYGrHi/th9wQxu9Uhr/MmanFXWZCRqY5RFf+drk+vRVeLosC/SqwXatFWS9mC2eSPapUJrGWObEHeCODg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24n.tar.gz",
+      "notes": "Fix: the dock's right-click menu was clipped by the dock's own window, so only Remove from Dock was visible. Open/Quit now show correctly.",
       "rollback_available": true
     }
   ]

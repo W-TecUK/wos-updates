@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24f-beta",
-      "version": "1.1.13",
+      "id": "feature-2026-09-24g-beta",
+      "version": "1.1.14",
       "kind": "feature",
-      "size": 916391,
-      "sha256": "b2b411e2d99119ca24c568734fe8ab58e1ead7c56195ff3b0c315fa7b965fefd",
-      "signature": "i/aWLjq6iV+EcQrUV3zTTz5/Xg8ag4KnbkcNuNzCjUf8739dO9alxy4rVbvgGDrVgq56G+fPyDoMxAutt5sVAg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24f-beta.tar.gz",
-      "notes": "Beta: Satisfaction rebuilt as a real interpreter (satlang.py), not a JS translator -- own repo at github.com/W-TecUK/satisfaction-lang. .satif logic + .satUI views, executed directly, no compile step. Try the Satisfaction Counter demo. Also still auto-installs Windows App Support and the experimental real-Office installer at login.",
+      "size": 919536,
+      "sha256": "f22a97adba7b6b023299bd84ab3963b109b57012b54594adcf5d8f9c5749a8ba",
+      "signature": "s8NsP7Cv8ni82gsARy8AS8IgeDcPiSy/PV44AU6PwjbCClny0zPSqFgq/0IDs481aEs/Fl+kZYrSo6UPQzzrBw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24g-beta.tar.gz",
+      "notes": "Beta: Satisfaction is now off WebKit entirely (first slice) -- wos-sat-run renders .satUI as real native GTK widgets, no HTML/JS anywhere. New: satshell, a real parallel desktop shell (desktop/bar/dock) written in Satisfaction and rendered natively -- run 'wos-satisfaction-session' from a Terminal to try it (it'll overlap the real bar/dock for now; not yet a selectable login session, that needs a new ISO).",
       "rollback_available": true
     }
   ]

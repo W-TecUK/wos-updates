@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24q-beta",
-      "version": "1.1.20",
+      "id": "feature-2026-09-24s-beta",
+      "version": "1.1.21",
       "kind": "feature",
-      "size": 928526,
-      "sha256": "af425b122b239c00549549f56bedc24f28f29dcba887521e67252a8dbf653e8a",
-      "signature": "YbJpY/juQ1zOFlBfwlHY8XMhmI20P99+0KgnSyO5ixIVCEKpUuehq11PvQlzc6XdqUqZ2yd1so6etBfAdxO8Dg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24q-beta.tar.gz",
-      "notes": "New Developer app: write, run, and install/update Satisfaction apps without an OS update. Plus the Store apt-install fix (Writer/Calc/Impress and others).",
+      "size": 928548,
+      "sha256": "c24813da5d99eec8332b3bf7f072c75a67809332254ef9d456c5123bdb41edeb",
+      "signature": "Re/iWv29K0+SSf7xP4gyNnCPMVrdBjPkGwIpIbHotTEqmhaqw5y16/1TwOKxczHXuk7ZLq18TCmgyRRo7ssQBQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24s-beta.tar.gz",
+      "notes": "Fix: Writer/Calc/Impress installed but never appeared in search or the launcher.",
       "rollback_available": true
     }
   ]

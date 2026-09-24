@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24m-beta",
-      "version": "1.1.18",
+      "id": "feature-2026-09-24o-beta",
+      "version": "1.1.19",
       "kind": "feature",
-      "size": 924329,
-      "sha256": "3f4c12db20ea3a4c7d3768a4080b8fb31006fee0c8b3a8af44c6f1cf0484049b",
-      "signature": "pnA0QqOkX3tAEvwW5V0EN9Bg4bdQLtJX3TIV2gp+2EtXD/sWg1Fq1Kftyqlig6Mu2Qhwsvgz52pJ6uOyTb14CA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24m-beta.tar.gz",
-      "notes": "3 new Settings features: Night Light, a keyboard shortcuts reference, and Login Items (startup apps). Plus 2 tidy-ups.",
+      "size": 924635,
+      "sha256": "fd7d82355c9eaf004a5cda177646a36236eecf07f31a65cbb9fc0a0e8a4946db",
+      "signature": "6TdcaQxxVAxeVc/cCLSWRRmlB2gpgIQF8hslKeI63Fr4W13y9fohN9rgndI+ZZ7ihstxNLVQzJzS4dPRKpQoAA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24o-beta.tar.gz",
+      "notes": "Fix: the dock's right-click menu was clipped by the dock's own window, so only Remove from Dock was visible.",
       "rollback_available": true
     }
   ]

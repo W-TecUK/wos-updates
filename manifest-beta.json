@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24k-beta",
-      "version": "1.1.17",
+      "id": "feature-2026-09-24m-beta",
+      "version": "1.1.18",
       "kind": "feature",
-      "size": 922646,
-      "sha256": "90761bb6d521925b506c915e31d05ee5c9bd7006a0537dfac0cb1be3bb222b2c",
-      "signature": "pANxJQq3XvILx2qs4vgNnDBtgbSbaSGJyNoiSlBTDh39hl/QNRPL8vNdkgC5ANr407DwPxNMfNxby1wInWXwBA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24k-beta.tar.gz",
-      "notes": "Fix: Super+Arrow window snap did nothing -- xfwm4 was winning the key-grab race against the shell. Now routed through xfconf, same as Super+Space.",
+      "size": 924329,
+      "sha256": "3f4c12db20ea3a4c7d3768a4080b8fb31006fee0c8b3a8af44c6f1cf0484049b",
+      "signature": "pnA0QqOkX3tAEvwW5V0EN9Bg4bdQLtJX3TIV2gp+2EtXD/sWg1Fq1Kftyqlig6Mu2Qhwsvgz52pJ6uOyTb14CA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24m-beta.tar.gz",
+      "notes": "3 new Settings features: Night Light, a keyboard shortcuts reference, and Login Items (startup apps). Plus 2 tidy-ups.",
       "rollback_available": true
     }
   ]

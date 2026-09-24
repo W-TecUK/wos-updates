@@ -1,15 +1,15 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24c",
-      "version": "1.1.12",
-      "kind": "feature",
-      "size": 902494,
-      "sha256": "2f68f5aebac0fb3f57403ab2d25d378182142c1f774c819b05ab2efda647d364",
-      "signature": "D6lEstdchmFeLX3KSrwalDSNTDzKCpl759nGaF5jtnuGa92fpL6+sulIq0nsFQ3S+m+KjQKegaxfPfp21HbWCQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24c.tar.gz",
-      "notes": "New: Settings > Updates has a Beta updates toggle. Off by default and nothing changes unless you turn it on -- it's the plumbing for an opt-in trial channel, not a trial itself.",
-      "rollback_available": true
+      "id": "feature-2026-09-24e",
+      "version": "1.1.13",
+      "kind": "security",
+      "size": 900794,
+      "sha256": "d28d6378dc6c0758e8e7427dbcf57c6b2bf2dc11e7da90b02c86d72b27281966",
+      "signature": "Ujx3BMuEJR9P42kev4bV/V88io3YLldLXzve3UkVQrHABEBD6Wr3WsYQ0FUEh/VT1Hi8q52c2ZCxBC8KcyGnBA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24e.tar.gz",
+      "notes": "Update-system repair: the bridge that widened what an update may change only ever existed as a single update, and later updates replaced it -- any device that missed that exact window was stuck ever since, failing every update with 'may not change ... policies.json'. Re-published as the current update so a stuck device has something to land on again. The Firefox titlebar fix and other theme changes will follow right behind this.",
+      "rollback_available": false
     }
   ]
 }

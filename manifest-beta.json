@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24d-beta",
-      "version": "1.1.12",
+      "id": "feature-2026-09-24f-beta",
+      "version": "1.1.13",
       "kind": "feature",
-      "size": 909814,
-      "sha256": "ec31c116e382cb92f43737dfe41a69da4d79dd5add80a7968c2d5bdc0723410a",
-      "signature": "GZq5jxcl0V6QfLmXlH/W44gXAaQzmmdzJAx6ExVJB5D79LNoLlqoaiSa/pyI7W+NLsd8KWKRc28J6W9kOPoVBQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24d-beta.tar.gz",
-      "notes": "Beta: Satisfaction v0.1, W-OS's own trial language (.satif logic + .satUI views, compiled by satc to real JS/HTML) -- try the Satisfaction Counter demo app, sources included. Also auto-installs Windows App Support and the experimental real-Office installer at login instead of waiting to be asked.",
+      "size": 916391,
+      "sha256": "b2b411e2d99119ca24c568734fe8ab58e1ead7c56195ff3b0c315fa7b965fefd",
+      "signature": "i/aWLjq6iV+EcQrUV3zTTz5/Xg8ag4KnbkcNuNzCjUf8739dO9alxy4rVbvgGDrVgq56G+fPyDoMxAutt5sVAg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24f-beta.tar.gz",
+      "notes": "Beta: Satisfaction rebuilt as a real interpreter (satlang.py), not a JS translator -- own repo at github.com/W-TecUK/satisfaction-lang. .satif logic + .satUI views, executed directly, no compile step. Try the Satisfaction Counter demo. Also still auto-installs Windows App Support and the experimental real-Office installer at login.",
       "rollback_available": true
     }
   ]

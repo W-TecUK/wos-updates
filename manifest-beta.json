@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24i-beta",
-      "version": "1.1.16",
+      "id": "feature-2026-09-24k-beta",
+      "version": "1.1.17",
       "kind": "feature",
-      "size": 922001,
-      "sha256": "b4be2a8149cb2fbde6a07a9a23d73a80814480f8f8fe30d09d7b847c68daf349",
-      "signature": "Vt/9XKmn6QBuKCsqpVppJBXCyrpyanluZLQsxwB95/AmCLjh4kIFI+GSN0piZ+GHSP/VQNKqBIjJjJUMIyYUBQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24i-beta.tar.gz",
-      "notes": "Beta channel picks up the stable UI batch (window snapping, hot corners, dock right-click menu) and About now shows Beta instead of ALPHA on beta-channel devices.",
+      "size": 922646,
+      "sha256": "90761bb6d521925b506c915e31d05ee5c9bd7006a0537dfac0cb1be3bb222b2c",
+      "signature": "pANxJQq3XvILx2qs4vgNnDBtgbSbaSGJyNoiSlBTDh39hl/QNRPL8vNdkgC5ANr407DwPxNMfNxby1wInWXwBA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24k-beta.tar.gz",
+      "notes": "Fix: Super+Arrow window snap did nothing -- xfwm4 was winning the key-grab race against the shell. Now routed through xfconf, same as Super+Space.",
       "rollback_available": true
     }
   ]

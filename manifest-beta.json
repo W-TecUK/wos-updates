@@ -1,0 +1,15 @@
+{
+  "packages": [
+    {
+      "id": "feature-2026-09-24d-beta",
+      "version": "1.1.12",
+      "kind": "feature",
+      "size": 909814,
+      "sha256": "ec31c116e382cb92f43737dfe41a69da4d79dd5add80a7968c2d5bdc0723410a",
+      "signature": "GZq5jxcl0V6QfLmXlH/W44gXAaQzmmdzJAx6ExVJB5D79LNoLlqoaiSa/pyI7W+NLsd8KWKRc28J6W9kOPoVBQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24d-beta.tar.gz",
+      "notes": "Beta: Satisfaction v0.1, W-OS's own trial language (.satif logic + .satUI views, compiled by satc to real JS/HTML) -- try the Satisfaction Counter demo app, sources included. Also auto-installs Windows App Support and the experimental real-Office installer at login instead of waiting to be asked.",
+      "rollback_available": true
+    }
+  ]
+}

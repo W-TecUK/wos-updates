@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24o-beta",
-      "version": "1.1.19",
+      "id": "feature-2026-09-24q-beta",
+      "version": "1.1.20",
       "kind": "feature",
-      "size": 924635,
-      "sha256": "fd7d82355c9eaf004a5cda177646a36236eecf07f31a65cbb9fc0a0e8a4946db",
-      "signature": "6TdcaQxxVAxeVc/cCLSWRRmlB2gpgIQF8hslKeI63Fr4W13y9fohN9rgndI+ZZ7ihstxNLVQzJzS4dPRKpQoAA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24o-beta.tar.gz",
-      "notes": "Fix: the dock's right-click menu was clipped by the dock's own window, so only Remove from Dock was visible.",
+      "size": 928526,
+      "sha256": "af425b122b239c00549549f56bedc24f28f29dcba887521e67252a8dbf653e8a",
+      "signature": "YbJpY/juQ1zOFlBfwlHY8XMhmI20P99+0KgnSyO5ixIVCEKpUuehq11PvQlzc6XdqUqZ2yd1so6etBfAdxO8Dg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24q-beta.tar.gz",
+      "notes": "New Developer app: write, run, and install/update Satisfaction apps without an OS update. Plus the Store apt-install fix (Writer/Calc/Impress and others).",
       "rollback_available": true
     }
   ]

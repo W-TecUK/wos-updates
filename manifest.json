@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24b",
-      "version": "1.1.11",
+      "id": "feature-2026-09-24c",
+      "version": "1.1.12",
       "kind": "feature",
-      "size": 901908,
-      "sha256": "6c85bd6124ce73b8b2e5d68178c87d5e7e29d781db131c053343a30ffb06cd99",
-      "signature": "/5OKqN6SnmB909UqTUofJMvpOY0uHvGyj+5e36d1A7H58D2st7b0h61OCd4xGt15bY9hm87hwebuKDMBRpDmCw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24b.tar.gz",
-      "notes": "Autohidden bar/dock in full screen now come back when you move the pointer to the very top or bottom edge (same convention as macOS/Windows autohide) -- there was previously no way to get them back with nothing else to Alt-Tab to. Also fixed: the wallpaper and other permanent shell windows could be closed with Alt+F4; they can't be now.",
+      "size": 902494,
+      "sha256": "2f68f5aebac0fb3f57403ab2d25d378182142c1f774c819b05ab2efda647d364",
+      "signature": "D6lEstdchmFeLX3KSrwalDSNTDzKCpl759nGaF5jtnuGa92fpL6+sulIq0nsFQ3S+m+KjQKegaxfPfp21HbWCQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24c.tar.gz",
+      "notes": "New: Settings > Updates has a Beta updates toggle. Off by default and nothing changes unless you turn it on -- it's the plumbing for an opt-in trial channel, not a trial itself.",
       "rollback_available": true
     }
   ]

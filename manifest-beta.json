@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24s-beta",
-      "version": "1.1.21",
+      "id": "feature-2026-09-24t-beta",
+      "version": "1.1.22",
       "kind": "feature",
-      "size": 928548,
-      "sha256": "c24813da5d99eec8332b3bf7f072c75a67809332254ef9d456c5123bdb41edeb",
-      "signature": "Re/iWv29K0+SSf7xP4gyNnCPMVrdBjPkGwIpIbHotTEqmhaqw5y16/1TwOKxczHXuk7ZLq18TCmgyRRo7ssQBQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24s-beta.tar.gz",
-      "notes": "Fix: Writer/Calc/Impress installed but never appeared in search or the launcher.",
+      "size": 930577,
+      "sha256": "ba2bd7ca80b7b41eaf8677272fa3d1b114a47a9fe49f0acd86166d5c72e85215",
+      "signature": "FXT9ubPhZ1tpNWNtTTbmPxulrXlDJ4DZW2dYCa90qpo4bKwyocCJZfCdJaxdl9qtepq6bkzJCcB87l9a8zxpBw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24t-beta.tar.gz",
+      "notes": "The Developer app redesigned as a real IDE: toolbar, project navigator, tabbed editor with line numbers, a Console dock, and an Inspector/Docs rail. Same Run/Install/Export/Delete functionality as before -- presentation only.",
       "rollback_available": true
     }
   ]

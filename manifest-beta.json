@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24g-beta",
-      "version": "1.1.14",
+      "id": "feature-2026-09-24i-beta",
+      "version": "1.1.16",
       "kind": "feature",
-      "size": 919536,
-      "sha256": "f22a97adba7b6b023299bd84ab3963b109b57012b54594adcf5d8f9c5749a8ba",
-      "signature": "s8NsP7Cv8ni82gsARy8AS8IgeDcPiSy/PV44AU6PwjbCClny0zPSqFgq/0IDs481aEs/Fl+kZYrSo6UPQzzrBw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24g-beta.tar.gz",
-      "notes": "Beta: Satisfaction is now off WebKit entirely (first slice) -- wos-sat-run renders .satUI as real native GTK widgets, no HTML/JS anywhere. New: satshell, a real parallel desktop shell (desktop/bar/dock) written in Satisfaction and rendered natively -- run 'wos-satisfaction-session' from a Terminal to try it (it'll overlap the real bar/dock for now; not yet a selectable login session, that needs a new ISO).",
+      "size": 922001,
+      "sha256": "b4be2a8149cb2fbde6a07a9a23d73a80814480f8f8fe30d09d7b847c68daf349",
+      "signature": "Vt/9XKmn6QBuKCsqpVppJBXCyrpyanluZLQsxwB95/AmCLjh4kIFI+GSN0piZ+GHSP/VQNKqBIjJjJUMIyYUBQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24i-beta.tar.gz",
+      "notes": "Beta channel picks up the stable UI batch (window snapping, hot corners, dock right-click menu) and About now shows Beta instead of ALPHA on beta-channel devices.",
       "rollback_available": true
     }
   ]

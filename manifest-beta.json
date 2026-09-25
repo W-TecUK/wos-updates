@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-25e-beta",
-      "version": "1.1.28",
+      "id": "feature-2026-09-25f-beta",
+      "version": "1.1.29",
       "kind": "feature",
-      "size": 939705,
-      "sha256": "863837b4e3ad7c71d68b982aa0a5797cc55c834ffb2441482e8c70f3f9d6d96e",
-      "signature": "fjr+oaKqUdDCNlbdc+CrD5xp0A75BipfgBD8RgUBfTCa1hSbOSCM5avY6fcvLuj/Lvrj+Hik3CJX4zU0FzBZDA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25e-beta.tar.gz",
-      "notes": "Dock right-click menu fixed for real (input-shape + resize-race bugs). New: Clipboard history (Super+V, needs a full ISO rebuild for xclip), Quick Look (Space) and Get Info (Cmd+I) in Files. Two more bugs caught by code review (Developer app Inspector race, Quick Look re-opening on close).",
+      "size": 940114,
+      "sha256": "e74293d7de21ae7d36b525691b8f5092075e854810f04fa41ad9db2629ce68a1",
+      "signature": "BtPGEwT0B0kh4ejRCb7IgWDayujIGsb/yeXJdaxkOgSm8cNS0w01pKOnGJcXengjNmsitVCSy+Cm+GsxTKNBCQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25f-beta.tar.gz",
+      "notes": "Fix: Bluetooth pairing gave no feedback for up to 40 seconds (the Pair button never changed while pairing was actually in progress). Now shows Pairing/Connecting/Disconnecting immediately.",
       "rollback_available": true
     }
   ]

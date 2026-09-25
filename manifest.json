@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-25a",
-      "version": "1.1.24",
+      "id": "feature-2026-09-25c",
+      "version": "1.1.25",
       "kind": "feature",
-      "size": 911130,
-      "sha256": "dc0876cb3cf5f677130a34a495243e040793758aa95568f99179af6794266f80",
-      "signature": "v1GpuD2fFYTSUJcwrZDQOe36wDgKqgA9rb4+LJzs3ISJLKGtN8y5M8bG09O9bf4Q8DlsBVCKabxx8R+98YBEAw==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25a.tar.gz",
-      "notes": "Control Center gains Do Not Disturb and Night Light toggles. Dock icons can be dragged to reorder. Low battery notifications at 20% and 10%.",
+      "size": 913107,
+      "sha256": "58ad05931a3ce629500e4008d90d1a9ed32346f9a9af1241700ca9d64b5eb266",
+      "signature": "yih7VkYG9IADFNv+765o+VYFHzQH9wrRAkJrjAsfaMhmW7DBS/yVkEn3IcD40LlGrnrmP/kswexi+6S72tuQDw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25c.tar.gz",
+      "notes": "Settings' sidebar is now grouped (Personalization/Network & devices/Accounts & privacy/System) and restyled with a frosted sidebar. Wallpapers grouped into categories. Update battery threshold lowered from 30% to 25%.",
       "rollback_available": true
     }
   ]

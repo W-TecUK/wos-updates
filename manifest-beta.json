@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24u-beta",
-      "version": "1.1.23",
+      "id": "feature-2026-09-25b-beta",
+      "version": "1.1.24",
       "kind": "feature",
-      "size": 932646,
-      "sha256": "471e66d2cb505b126ce0e111506b8ba4729448624c82c7c875749cf574338f2c",
-      "signature": "p81MZeBc7/+bxgR1CdD+XYUsvBFqftsyOiPppru9vGStkJ4EWIAZ0sJZule0hr8VatQvd/Aa5x3iatYYxjanDg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24u-beta.tar.gz",
-      "notes": "Satisfaction gains import \"name\" for multiple .satif files; the Developer app's navigator is now a real file list (New File wires the import in automatically). .satUI stays single-file.",
+      "size": 934214,
+      "sha256": "ecd2fa2e2f4d79631633bbd21f7e29a952ad5b95c514afbcb5b04f0dd215cbac",
+      "signature": "182KRjHB6aMYUjXdWsJZyrZLvlJedmj9ScsNhG0tbkShCRTe0qsIvFNY4PRZ7CjL5rEwbLxXr5x4e5fFrqkCDw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25b-beta.tar.gz",
+      "notes": "Control Center gains Do Not Disturb and Night Light toggles. Dock icons can be dragged to reorder. Low battery notifications at 20% and 10%.",
       "rollback_available": true
     }
   ]

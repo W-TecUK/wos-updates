@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-25g-beta",
-      "version": "1.1.30",
+      "id": "feature-2026-09-25h-beta",
+      "version": "1.1.31",
       "kind": "feature",
-      "size": 940380,
-      "sha256": "8f4f5c64ba788773d17d75cc96725ab3174095f0ee2d52d49817341110d27188",
-      "signature": "p4XXBAMl0qiZ2aeOTIjjqCOUzSM08husagLXE5fhNFrahtWcstfI3FzYPdBXrXHhC0wNDcwqDsKj9Uh0IAxaAA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25g-beta.tar.gz",
-      "notes": "Fix: updates refused on battery regardless of charge level on laptops that charge over USB-C (the charger was never recognised as plugged in at all).",
+      "size": 940401,
+      "sha256": "a7295d89f6253f173f5183297d2f87aeecf37977df8b774da5e9b3ed29f3311f",
+      "signature": "WNmgTcjkni8jTqq4IOUrlhFDuDeWsgKBMz/xA+Ck6Lwd5Sd7j/2LaB5JAh5ElLlb8IBErEdg8A9yKzsWCqD/Cg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25h-beta.tar.gz",
+      "notes": "25% battery itself is now safe to update on (only strictly below 25% blocks, unplugged).",
       "rollback_available": true
     }
   ]

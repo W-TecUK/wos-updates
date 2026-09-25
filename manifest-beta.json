@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-09-24e",
+      "version": "1.1.13",
+      "kind": "security",
+      "size": 900794,
+      "sha256": "d28d6378dc6c0758e8e7427dbcf57c6b2bf2dc11e7da90b02c86d72b27281966",
+      "signature": "Ujx3BMuEJR9P42kev4bV/V88io3YLldLXzve3UkVQrHABEBD6Wr3WsYQ0FUEh/VT1Hi8q52c2ZCxBC8KcyGnBA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24e.tar.gz",
+      "notes": "A one-time bridge for devices old enough that their own update checker refuses newer updates outright (the update contains a file it may not change). Kept permanently on the feed, not just as a temporary latest, so this cannot recur for a device that missed the original window: install this first, then check again for anything newer.",
+      "rollback_available": false
+    },
+    {
       "id": "feature-2026-09-25i-beta",
       "version": "1.1.32",
       "kind": "feature",

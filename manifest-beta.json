@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-25h-beta",
-      "version": "1.1.31",
+      "id": "feature-2026-09-25i-beta",
+      "version": "1.1.32",
       "kind": "feature",
-      "size": 940401,
-      "sha256": "a7295d89f6253f173f5183297d2f87aeecf37977df8b774da5e9b3ed29f3311f",
-      "signature": "WNmgTcjkni8jTqq4IOUrlhFDuDeWsgKBMz/xA+Ck6Lwd5Sd7j/2LaB5JAh5ElLlb8IBErEdg8A9yKzsWCqD/Cg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25h-beta.tar.gz",
-      "notes": "25% battery itself is now safe to update on (only strictly below 25% blocks, unplugged).",
+      "size": 941246,
+      "sha256": "daaa1b9e14d5f51d73d1c3c21029ad2d8808f2b288bde6bf588f3006c6c08cee",
+      "signature": "yASM5suX9VOLUN/MxPQ48MjxGD3qCqJLRAYy61xPsAXU3bWxKWoKMSgx++3/3KSBhnwJ9b0H0IK9agdo3T2KCA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25i-beta.tar.gz",
+      "notes": "The desktop's Music widget is real now (was Coming soon): title/artist and Previous/Play-Pause/Next through playerctl. Needs a full ISO rebuild to actually control anything.",
       "rollback_available": true
     }
   ]

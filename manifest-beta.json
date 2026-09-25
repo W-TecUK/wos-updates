@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-25f-beta",
-      "version": "1.1.29",
+      "id": "feature-2026-09-25g-beta",
+      "version": "1.1.30",
       "kind": "feature",
-      "size": 940114,
-      "sha256": "e74293d7de21ae7d36b525691b8f5092075e854810f04fa41ad9db2629ce68a1",
-      "signature": "BtPGEwT0B0kh4ejRCb7IgWDayujIGsb/yeXJdaxkOgSm8cNS0w01pKOnGJcXengjNmsitVCSy+Cm+GsxTKNBCQ==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25f-beta.tar.gz",
-      "notes": "Fix: Bluetooth pairing gave no feedback for up to 40 seconds (the Pair button never changed while pairing was actually in progress). Now shows Pairing/Connecting/Disconnecting immediately.",
+      "size": 940380,
+      "sha256": "8f4f5c64ba788773d17d75cc96725ab3174095f0ee2d52d49817341110d27188",
+      "signature": "p4XXBAMl0qiZ2aeOTIjjqCOUzSM08husagLXE5fhNFrahtWcstfI3FzYPdBXrXHhC0wNDcwqDsKj9Uh0IAxaAA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25g-beta.tar.gz",
+      "notes": "Fix: updates refused on battery regardless of charge level on laptops that charge over USB-C (the charger was never recognised as plugged in at all).",
       "rollback_available": true
     }
   ]

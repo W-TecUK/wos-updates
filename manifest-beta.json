@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-09-25j-beta",
+      "version": "1.1.33",
+      "kind": "feature",
+      "size": 942733,
+      "sha256": "86d62a078ac3d495c10ea9bd6e3106f685551f9f4f54b20c79b803940741b8bc",
+      "signature": "9ib0RXfD6HqMxqZi1al01OIUiYALSKx1h9Q0hSsRNIDhES56TcFn2LKItG6PtOIel+HUxt3dEew7V/8pgZvWBg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25j-beta.tar.gz",
+      "notes": "Multi-display: desktop now spans every monitor, window snap and hot corners are monitor-aware. Files: places refresh live on drive plug/unplug, and removable volumes get a real Eject action.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-09-24e",
       "version": "1.1.13",
       "kind": "security",

@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-09-25l-beta",
+      "version": "1.1.35",
+      "kind": "feature",
+      "size": 943689,
+      "sha256": "a026bd773c59977fb7a2dd461313e18c7bb7b98c41c0d3052be2b64fe6037dc3",
+      "signature": "3hKsmd7U7b8KOIXEmXiyMK6pCR+HjfnRmQ+UlBY1AF8vSD111L0CjwbDBFeansbk5spX4BrlRTG+JeaGCsCJDg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25l-beta.tar.gz",
+      "notes": "Redesigned the shared icon set: duotone (filled accent + outline) instead of generic thin-line icons, per feedback that they felt stock/androidy.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-09-25k-beta",
       "version": "1.1.34",
       "kind": "feature",

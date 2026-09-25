@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-25d-beta",
-      "version": "1.1.25",
+      "id": "feature-2026-09-25e-beta",
+      "version": "1.1.28",
       "kind": "feature",
-      "size": 936057,
-      "sha256": "25534e8cc9bf897e857a28f546bbf740897bc7b52a3a017f44a180e8da0b9214",
-      "signature": "slMI1KKdYaTkM1ZdT8xstD0i7KtJiR6IjRpnI5SekSTeCSv7c5spSe+tZ81dsDwVOgf76mRjls5Y6Fd1aRy8Cg==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25d-beta.tar.gz",
-      "notes": "Settings' sidebar is now grouped and restyled. Wallpapers grouped into categories. Update battery threshold lowered from 30% to 25%.",
+      "size": 939705,
+      "sha256": "863837b4e3ad7c71d68b982aa0a5797cc55c834ffb2441482e8c70f3f9d6d96e",
+      "signature": "fjr+oaKqUdDCNlbdc+CrD5xp0A75BipfgBD8RgUBfTCa1hSbOSCM5avY6fcvLuj/Lvrj+Hik3CJX4zU0FzBZDA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25e-beta.tar.gz",
+      "notes": "Dock right-click menu fixed for real (input-shape + resize-race bugs). New: Clipboard history (Super+V, needs a full ISO rebuild for xclip), Quick Look (Space) and Get Info (Cmd+I) in Files. Two more bugs caught by code review (Developer app Inspector race, Quick Look re-opening on close).",
       "rollback_available": true
     }
   ]

@@ -1,14 +1,14 @@
 {
   "packages": [
     {
-      "id": "feature-2026-09-24r",
-      "version": "1.1.21",
+      "id": "feature-2026-09-25a",
+      "version": "1.1.24",
       "kind": "feature",
-      "size": 909209,
-      "sha256": "f2861169d9e55de902f98414dfd3de5d02d22ddcdec23b6a1142e270022e6612",
-      "signature": "FS5wQ2vi9bYWeUu8/dv3Rs+VViu6YeKQYxRvUOQUSVF++cpOcUgyjnaqY8DQ9tybPcJZau+k0I/k7ieIXybzBA==",
-      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-24r.tar.gz",
-      "notes": "Fix: Writer/Calc/Impress installed but never appeared in search or the launcher -- launcher.json's libreoffice- hidden prefix was also hiding the real apps, not just LibreOffice's own noise.",
+      "size": 911130,
+      "sha256": "dc0876cb3cf5f677130a34a495243e040793758aa95568f99179af6794266f80",
+      "signature": "v1GpuD2fFYTSUJcwrZDQOe36wDgKqgA9rb4+LJzs3ISJLKGtN8y5M8bG09O9bf4Q8DlsBVCKabxx8R+98YBEAw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-25a.tar.gz",
+      "notes": "Control Center gains Do Not Disturb and Night Light toggles. Dock icons can be dragged to reorder. Low battery notifications at 20% and 10%.",
       "rollback_available": true
     }
   ]

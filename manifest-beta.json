@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-09-27a-beta",
+      "version": "1.1.36",
+      "kind": "feature",
+      "size": 945068,
+      "sha256": "9a5ae10d253d503030abd52fd8f63f24b2bbb8a508d1a04549496bd676251715",
+      "signature": "7V3OXcoiVhY111eAkaIuSBUPRx3kHRtvPdoYWHO2O/m5PvcIu6BrLWUhpgsjw7LpcjBDnBEQawJckL8gxToLBg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-27a-beta.tar.gz",
+      "notes": "Custom dropdown replaces every native <select> in Settings, matching the rest of the design instead of showing the browser's own popup list.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-09-25l-beta",
       "version": "1.1.35",
       "kind": "feature",

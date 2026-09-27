@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-09-27d-beta",
+      "version": "1.1.39",
+      "kind": "feature",
+      "size": 947431,
+      "sha256": "c20331fd6fdd863b9a6a73a8f9f855b047823dd031f32fcdc386347a48bb3d32",
+      "signature": "rAQkSX2k+mpOnkZrLl+B2WGuSLdeVcz93fMOgH4MCyJUbhZmx6nOFIpXBrRaPDER777KnV7AKr3hZbL9yTiSAQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-27d-beta.tar.gz",
+      "notes": "Volume and Night Light sliders get a filled pill track and a proper thumb instead of the browser's flat default range styling.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-09-27c-beta",
       "version": "1.1.38",
       "kind": "feature",

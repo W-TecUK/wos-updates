@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-09-27b-beta",
+      "version": "1.1.37",
+      "kind": "feature",
+      "size": 946530,
+      "sha256": "e04d785f053fd613eb75d9e932ef6577a01acb95b6a345bb5c516eaa9cd65385",
+      "signature": "QGOZ62a2YDNINqXLxxXXPzDJ1fkOlftD2Hg1L85oJq46j2+YSg8eEgI+bEL7inRbQFL/5PfZQCt8KvkR3+tVBQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-27b-beta.tar.gz",
+      "notes": "Custom date/time picker in W-Calendar's event dialog, replacing the native browser calendar/time popup.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-09-27a-beta",
       "version": "1.1.36",
       "kind": "feature",

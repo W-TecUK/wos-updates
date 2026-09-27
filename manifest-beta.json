@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-09-27c-beta",
+      "version": "1.1.38",
+      "kind": "feature",
+      "size": 946814,
+      "sha256": "239f76eb71c199e54716ae26541c273769bb82c73f3a0ef4c8310761d1c8e2e0",
+      "signature": "8yM3gY2COOkY3WFvqXDvEcd+Sx2R847wX4ENR9ly2KhDXN8kQjjJ5CpeZLpMoav6OIheMR+aHPHjdwdOQ5TuDg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-09-27c-beta.tar.gz",
+      "notes": "Desktop widgets (music controls, coming-soon placeholder) no longer use raw emoji as icons -- real SVGs that take the widget's colour instead of full-colour system emoji.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-09-27b-beta",
       "version": "1.1.37",
       "kind": "feature",

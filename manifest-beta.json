@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-11a-beta",
+      "version": "1.1.41",
+      "kind": "feature",
+      "size": 951630,
+      "sha256": "e8b118536e40567224e9d6511594912e0257d488ada80ba2805b08b653087dba",
+      "signature": "S4q3gaHy7H2jkfMPJB03HeLipwnQVFehpCLKppzgdppLLjW7WReTQB82SrjNdUY4pNAYnY/AlpKphaj+HrCiDw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-11a-beta.tar.gz",
+      "notes": "Company-controlled App Store (signed catalogue: approve, update, withdraw apps without an OS release) and new dock styles: Default, Full, Bubbled, Bubbled condensed.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-09-27d-beta",
       "version": "1.1.39",
       "kind": "feature",

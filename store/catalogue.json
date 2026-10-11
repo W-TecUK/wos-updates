@@ -1,0 +1,329 @@
+{
+  "version": 4,
+  "apps": [
+    {
+      "kind": "flatpak",
+      "flatpak": "com.spotify.Client",
+      "id": "com.spotify.Client",
+      "name": "Spotify",
+      "by": "Spotify",
+      "cat": "Music",
+      "blurb": "The Spotify app: music and podcasts, offline listening.",
+      "note": "First install downloads about 600 MB.",
+      "icon": "com.spotify.Client"
+    },
+    {
+      "kind": "web",
+      "id": "spotify-web",
+      "name": "Spotify Web Player",
+      "by": "Spotify",
+      "cat": "Music",
+      "blurb": "Spotify in your browser, no download.",
+      "url": "https://open.spotify.com",
+      "colour": "#1DB954",
+      "icon": "spotify-web",
+      "engine": "firefox"
+    },
+    {
+      "kind": "flatpak",
+      "flatpak": "com.visualstudio.code",
+      "id": "com.visualstudio.code",
+      "name": "Visual Studio Code",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "The code editor, the full Linux app.",
+      "note": "First install downloads about 1 GB, later apps much less.",
+      "icon": "com.visualstudio.code"
+    },
+    {
+      "kind": "flatpak",
+      "flatpak": "com.microsoft.Edge",
+      "id": "com.microsoft.Edge",
+      "name": "Microsoft Edge",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "Microsoft's web browser.",
+      "note": "First install downloads about 1 GB, later apps much less.",
+      "icon": "com.microsoft.Edge"
+    },
+    {
+      "kind": "flatpak",
+      "flatpak": "com.github.IsmaelMartinez.teams_for_linux",
+      "id": "com.github.IsmaelMartinez.teams_for_linux",
+      "name": "Teams",
+      "by": "Community build",
+      "cat": "Microsoft",
+      "blurb": "Chat and meetings. An unofficial app: Microsoft has no Linux Teams app.",
+      "note": "First install downloads about 1 GB, later apps much less.",
+      "icon": "com.github.IsmaelMartinez.teams_for_linux"
+    },
+    {
+      "kind": "web",
+      "id": "ms-word",
+      "name": "Word",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "Documents, in an app window.",
+      "url": "https://www.office.com/launch/word",
+      "colour": "#2B579A",
+      "icon": "ms-word",
+      "engine": "webkit",
+      "families": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "web",
+      "id": "ms-excel",
+      "name": "Excel",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "Spreadsheets, in an app window.",
+      "url": "https://www.office.com/launch/excel",
+      "colour": "#217346",
+      "icon": "ms-excel",
+      "engine": "webkit",
+      "families": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "web",
+      "id": "ms-powerpoint",
+      "name": "PowerPoint",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "Presentations, in an app window.",
+      "url": "https://www.office.com/launch/powerpoint",
+      "colour": "#C43E1C",
+      "icon": "ms-powerpoint",
+      "engine": "webkit",
+      "families": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "web",
+      "id": "ms-outlook",
+      "name": "Outlook",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "Email, calendar and contacts.",
+      "url": "https://outlook.office.com/mail",
+      "colour": "#0078D4",
+      "icon": "ms-outlook",
+      "engine": "webkit",
+      "families": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "web",
+      "id": "ms-onenote",
+      "name": "OneNote",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "Notes and notebooks.",
+      "url": "https://www.onenote.com/notebooks",
+      "colour": "#7719AA",
+      "icon": "ms-onenote",
+      "engine": "webkit",
+      "families": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "web",
+      "id": "ms-onedrive",
+      "name": "OneDrive",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "Your files in the cloud.",
+      "url": "https://onedrive.live.com",
+      "colour": "#0364B8",
+      "icon": "ms-onedrive",
+      "engine": "webkit",
+      "families": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "web",
+      "id": "ms-365",
+      "name": "Microsoft 365",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "All your Microsoft apps in one place.",
+      "url": "https://www.microsoft365.com",
+      "colour": "#D83B01",
+      "icon": "ms-365",
+      "engine": "webkit",
+      "families": [
+        "microsoft"
+      ]
+    },
+    {
+      "kind": "wine",
+      "id": "ms-office-exe",
+      "name": "Microsoft Office (real app)",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "Word, Excel, PowerPoint, Outlook and OneNote, the real Windows apps, not a web app.",
+      "note": "Experimental. Needs your own Microsoft 365 sign-in, downloads several GB, and may not work reliably -- modern Office is not well supported by Windows App Support yet.",
+      "icon": "ms-office-exe",
+      "installer": "https://aka.ms/ODT"
+    },
+    {
+      "kind": "web",
+      "id": "ms-vscode-web",
+      "name": "VS Code for the Web",
+      "by": "Microsoft",
+      "cat": "Microsoft",
+      "blurb": "Edit code in an app window, nothing to install.",
+      "url": "https://vscode.dev",
+      "colour": "#0A64B2",
+      "icon": "ms-vscode-web",
+      "engine": "webkit",
+      "families": [
+        "microsoft",
+        "github"
+      ]
+    },
+    {
+      "kind": "flatpak",
+      "flatpak": "io.github.shiftey.Desktop",
+      "id": "io.github.shiftey.Desktop",
+      "name": "GitHub Desktop",
+      "by": "Community build",
+      "cat": "Developer",
+      "blurb": "Work with GitHub repositories. GitHub makes no Linux version, so this is the community one.",
+      "note": "First install downloads about 1 GB, later apps much less.",
+      "icon": "io.github.shiftey.Desktop"
+    },
+    {
+      "kind": "web",
+      "id": "github",
+      "name": "GitHub",
+      "by": "GitHub",
+      "cat": "Developer",
+      "blurb": "GitHub in an app window.",
+      "url": "https://github.com",
+      "colour": "#24292F",
+      "icon": "github",
+      "engine": "webkit",
+      "families": [
+        "github"
+      ]
+    },
+    {
+      "package": "libreoffice-writer",
+      "name": "Writer",
+      "by": "The Document Foundation",
+      "cat": "Work",
+      "blurb": "Write letters and documents.",
+      "glyph": "doc",
+      "kind": "package"
+    },
+    {
+      "package": "libreoffice-calc",
+      "name": "Calc",
+      "by": "The Document Foundation",
+      "cat": "Work",
+      "blurb": "Spreadsheets and calculations.",
+      "glyph": "grid",
+      "kind": "package"
+    },
+    {
+      "package": "libreoffice-impress",
+      "name": "Impress",
+      "by": "The Document Foundation",
+      "cat": "Work",
+      "blurb": "Presentations.",
+      "glyph": "image",
+      "kind": "package"
+    },
+    {
+      "package": "vlc",
+      "name": "VLC",
+      "by": "VideoLAN",
+      "cat": "Video",
+      "blurb": "Plays nearly any video or audio file.",
+      "glyph": "image",
+      "kind": "package"
+    },
+    {
+      "package": "gimp",
+      "name": "GIMP",
+      "by": "The GIMP team",
+      "cat": "Creative",
+      "blurb": "Edit and retouch pictures.",
+      "glyph": "paint",
+      "kind": "package"
+    },
+    {
+      "package": "inkscape",
+      "name": "Inkscape",
+      "by": "The Inkscape team",
+      "cat": "Creative",
+      "blurb": "Draw and edit vector graphics.",
+      "glyph": "edit",
+      "kind": "package"
+    },
+    {
+      "package": "audacity",
+      "name": "Audacity",
+      "by": "The Audacity team",
+      "cat": "Creative",
+      "blurb": "Record and edit sound.",
+      "glyph": "sound",
+      "kind": "package"
+    },
+    {
+      "package": "obs-studio",
+      "name": "OBS Studio",
+      "by": "The OBS Project",
+      "cat": "Video",
+      "blurb": "Record and stream your screen.",
+      "glyph": "image",
+      "kind": "package"
+    },
+    {
+      "package": "thunderbird",
+      "name": "Thunderbird",
+      "by": "Mozilla",
+      "cat": "Internet",
+      "blurb": "Email for accounts outside W-Mail.",
+      "glyph": "mail",
+      "kind": "package"
+    },
+    {
+      "package": "transmission-gtk",
+      "name": "Transmission",
+      "by": "The Transmission team",
+      "cat": "Internet",
+      "blurb": "Download torrents.",
+      "glyph": "download",
+      "kind": "package"
+    },
+    {
+      "package": "keepassxc",
+      "name": "KeePassXC",
+      "by": "The KeePassXC team",
+      "cat": "Security",
+      "blurb": "Keep passwords safe.",
+      "glyph": "lock",
+      "kind": "package"
+    },
+    {
+      "kind": "package",
+      "package": "flatpak",
+      "name": "Flatpak",
+      "by": "Flatpak",
+      "cat": "System",
+      "blurb": "Needed for apps from Flathub.",
+      "glyph": "grid",
+      "hidden": true
+    }
+  ],
+  "revoked": []
+}

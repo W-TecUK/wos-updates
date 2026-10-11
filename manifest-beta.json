@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-12c-beta",
+      "version": "1.1.44",
+      "kind": "feature",
+      "size": 970324,
+      "sha256": "cd36b4137a1cdafdb2c608dc3a41a67d7b7ba3d0506eb2893d0e8cbb4c9e9531",
+      "signature": "s2UwDEgT1KlMGIBIZ8/W4qHOEB86xvUh6peLInlgAyzK/S3cJ3ZzTazy5kM+TYsd/xOLuwsKCACIhsaduG7qDA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-12c-beta.tar.gz",
+      "notes": "Pictures now open in Photos (the previous default only took effect for two picture types); Files gets Ctrl+F for search. Includes the crash-recovery, Files, Wi-Fi, launcher and printing work from 1.1.42 and 1.1.43, now checked on the real system.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-12b-beta",
       "version": "1.1.43",
       "kind": "feature",

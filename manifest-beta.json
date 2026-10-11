@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-12b-beta",
+      "version": "1.1.43",
+      "kind": "feature",
+      "size": 969150,
+      "sha256": "9b73e9f4c2d4d6f218b903afd6818e6fe4655fa4c3af86257e69c005f4db73a0",
+      "signature": "B3U8rJzQbucmDAEhQc2HqNX6PDgQH+Rpobb4T6G77baYTJo/NqqEUiMUjNkJUeREz33S9vXoWui11GOwGGfdCw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-12b-beta.tar.gz",
+      "notes": "Add printers from Settings (network and USB, test page, make default); double-click a photo to open it in Photos and a text file in the new Text app (saves as you type); safer file saving.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-12a-beta",
       "version": "1.1.42",
       "kind": "feature",

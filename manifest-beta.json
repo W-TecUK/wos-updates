@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-12a-beta",
+      "version": "1.1.42",
+      "kind": "feature",
+      "size": 961249,
+      "sha256": "9ee1f3f8f325380acaec5f68085b883108a65d3e3c282361d73362c9fc95bf76",
+      "signature": "v7j08kZNSWPX3wm84XNoz9dICVwsP/MgiY7nkFub5Y+OVLXalwO5KHbufoaUmTOoSZdqI1FVgiln8hGO1aWRCA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-12a-beta.tar.gz",
+      "notes": "Everyday-use pass: the desktop recovers from crashes instead of dropping to a terminal; Files gets multi-select, right-click menus, drag and drop, zip/unpack and subfolder search; Wi-Fi remembers saved networks, supports school/work networks, hidden networks and captive-portal sign-in pages; the launcher answers sums and unit conversions and can search the web.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-11a-beta",
       "version": "1.1.41",
       "kind": "feature",

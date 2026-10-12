@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-12d-beta",
+      "version": "1.1.45",
+      "kind": "feature",
+      "size": 981557,
+      "sha256": "2fb065f90065ec1107a2a668d936d9dadf232dfc5a1a9724f51a5559c841f8ae",
+      "signature": "o0lO5siGougjrz8Gjot3s2SNIrnL6BAb9M5Gcie3XWoWyJsHDZYUQSddw+Z3YJExpcRXwLJPWSjGI2Ir5w7kCA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-12d-beta.tar.gz",
+      "notes": "Mail now reads and sends real email: add W-Mail, iCloud, Yahoo, Fastmail or any IMAP account. Gmail and Outlook.com sign-in (OAuth) is not supported.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-12c-beta",
       "version": "1.1.44",
       "kind": "feature",

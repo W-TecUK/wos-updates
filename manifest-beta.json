@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14d-beta",
+      "version": "1.1.49",
+      "kind": "feature",
+      "size": 1006570,
+      "sha256": "b9c5ec3fd7a4b48d6ee29eb4e91438af5c7c25d08354faa4992860e0b64d41c2",
+      "signature": "w0vEeyN3RfPGu4G6V/aospyN+r3HTATmw20kBnAY4nGc9bHjGfEZwQ3rC1xC88LgC2PLqucDxCPbwCU8gTnZCQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14d-beta.tar.gz",
+      "notes": "Settings > Backup: back up your files to a USB drive (automatically once a day) and bring files back. The date panel now lists notifications from every app. New shortcuts: Super+L, Super+E, Super+I, Ctrl+Shift+Esc.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14c-beta",
       "version": "1.1.48",
       "kind": "feature",

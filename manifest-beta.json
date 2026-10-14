@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14j-beta",
+      "version": "1.1.55",
+      "kind": "feature",
+      "size": 1024726,
+      "sha256": "c287c8521c46dda07c56692c8dc07cf2cff550c70e40904034dfbf5231cec288",
+      "signature": "G4Zv0VkFXQnnpaA77p3QjGj0cVvam2GR91TdxzOl/Cl4qYeJ872WpMosdJO8z6tJnKMfaAzaqEI2UJ3ag41oBA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14j-beta.tar.gz",
+      "notes": "Mail can now save and send attachments and has a Cc box and address completion. Contacts can import and export vCard files.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14i-beta",
       "version": "1.1.54",
       "kind": "feature",

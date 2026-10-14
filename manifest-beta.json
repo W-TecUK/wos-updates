@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14f-beta",
+      "version": "1.1.51",
+      "kind": "feature",
+      "size": 1009030,
+      "sha256": "68badcb237c5319bdb94660c008b4302d1a68de5025d29bd8937f782c4374c4e",
+      "signature": "1M8LSN0jV305pk1sARnjUVs1xrcO225H7PBZHPPvE0Owd5aMfFvY13z40eqeYSAR0liv/MZlLS6D7YUXX+uCBQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14f-beta.tar.gz",
+      "notes": "Text fields, search boxes, dropdowns and every menu now use the same pill shape as the buttons.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14e-beta",
       "version": "1.1.50",
       "kind": "feature",

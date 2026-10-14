@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14i-beta",
+      "version": "1.1.54",
+      "kind": "feature",
+      "size": 1020618,
+      "sha256": "b5bca26eb0aefef2c939e8f92f05bd10d5a08330a0c5b7e241e123d172bc62ae",
+      "signature": "9AXfuZ39ZI3m3GYjPDB4r2EayRNM8vNzVzAw0OaGaqIKPZ5E2t6kcx2dddYKyYmqxLQfHzWvUkHr81K54fKNAg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14i-beta.tar.gz",
+      "notes": "Calendar now has day, week and month views and syncs with your W-Account. Notepad syncs your notes across devices when you turn it on.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14h-beta",
       "version": "1.1.53",
       "kind": "feature",

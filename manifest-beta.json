@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14k-beta",
+      "version": "1.1.56",
+      "kind": "feature",
+      "size": 1027569,
+      "sha256": "6a215cca3827208c5c73128d9591a9425495470f6c331da357869efc160b6300",
+      "signature": "S9XDMFks4gR8wvliHZd5rCXwcCp4IjOAr8fPuwLJ7hNFVX6U9Gop971PU9OGqT0CcuaxDsRNgHadKZfPH4F7CA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14k-beta.tar.gz",
+      "notes": "A new look: big rounded panels from the William Graves Technology website, a Settings home page, a featured area in the App Store, and softer Big Sur and Windows 11 style surfaces across the apps.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14j-beta",
       "version": "1.1.55",
       "kind": "feature",

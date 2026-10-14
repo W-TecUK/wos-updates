@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14c-beta",
+      "version": "1.1.48",
+      "kind": "feature",
+      "size": 996724,
+      "sha256": "ae94e24457239ae158f635f80555c5f7b2f5411b0a3493b94c4a5ce4283e3716",
+      "signature": "GQEsD+RxmBVltS4M4gco9BVSr5OqT7TMI8E/VSB04/zINuIO4/k6UIGonW8w4vIP3CT9xc7dF78rmppHHgSdCQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14c-beta.tar.gz",
+      "notes": "Three new apps: Monitor (see what is running, quit stuck programs, live performance), Calculator (standard and scientific) and Clock (world clocks, alarms and timers that ring with the window closed, stopwatch).",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14b-beta",
       "version": "1.1.47",
       "kind": "feature",

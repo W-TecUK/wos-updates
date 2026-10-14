@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14h-beta",
+      "version": "1.1.53",
+      "kind": "feature",
+      "size": 1014798,
+      "sha256": "2f1c4e1a7bc32f8c63cb0870e992a54990b9c981fbdec6b4bbdc574e8d4dabac",
+      "signature": "i+WdWKOEvOX6n0Pa23vOk6pg++Au3mTlyvkZa+zI4In34ELKsbInVihbcq8EBBJFL7m41lLd9sd4CbcL2lcZAw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14h-beta.tar.gz",
+      "notes": "VPN in Settings > Network, battery health in Power, a switch per app for notification banners, and the date panel now groups notifications by app.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14g-beta",
       "version": "1.1.52",
       "kind": "feature",

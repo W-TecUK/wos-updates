@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14a-beta",
+      "version": "1.1.46",
+      "kind": "feature",
+      "size": 985547,
+      "sha256": "b47a7d815409380a8d0a814b6c2e4e88cefcbdd9c738c28f5d247121ddf4b4a8",
+      "signature": "Zwof2WPTMuv+eyYuy/dV8liB95k8LW6XqBiwgcE38v2s6BGi456th0yYev77S0EvyZARfwoqawbTUUBtmR42CA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14a-beta.tar.gz",
+      "notes": "New Activation page in Settings: a W-Account gives you everything free; otherwise a product key tied to this computer. Nothing is locked yet.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-12d-beta",
       "version": "1.1.45",
       "kind": "feature",

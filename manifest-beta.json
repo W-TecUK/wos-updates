@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14e-beta",
+      "version": "1.1.50",
+      "kind": "feature",
+      "size": 1008568,
+      "sha256": "e5108bbc83ad48c927bf29b590baea684ae3d9fbc9b27ca9087fc25cdd403989",
+      "signature": "jgEYYZGN1h3gTqsG/iMRSBYiRlbkk4rdAthc8KoHpnuB0udKBx9UaYKY5DsVcENs4Ya2bC35zkTLksP3up3pCg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14e-beta.tar.gz",
+      "notes": "Buttons across the apps now match the setup screens: same weight and greys, red for destructive actions, round arrows, and a visible keyboard focus ring.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14d-beta",
       "version": "1.1.49",
       "kind": "feature",

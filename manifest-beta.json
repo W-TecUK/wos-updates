@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14b-beta",
+      "version": "1.1.47",
+      "kind": "feature",
+      "size": 986066,
+      "sha256": "939344ebd7fdd9c6adddddaf1e6953265b07eeee77da4736fdfd7d7781a5eef8",
+      "signature": "pbhOq51N7H0QSr1o1/IF+vdIK3BwDZ8nZHwaagbPo+s1FiV0xFQr9sr0KA+GtKy9CwCHtie7LA6y5DfhXfD7Aw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14b-beta.tar.gz",
+      "notes": "Limited mode: a computer with no W-Account and no product key keeps everything it has, but cannot add new apps from the Store. Explained in Settings > Activation.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14a-beta",
       "version": "1.1.46",
       "kind": "feature",

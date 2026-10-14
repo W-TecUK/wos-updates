@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-10-14g-beta",
+      "version": "1.1.52",
+      "kind": "feature",
+      "size": 1009280,
+      "sha256": "49cced9eb82c5e49d1f3394ee2053b72cd63e66d6e797e1af349205d2ce10611",
+      "signature": "iXWQbCVhEWQr4KmD09Y75CnHMuSaagBmoYzOnwRRqXmirw3VGio59hLrBx23dUOb/1bmx+cPsmuu+cU7ekv6Bw==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-10-14g-beta.tar.gz",
+      "notes": "Fixes from testing on the real system: Settings > Backup no longer says Backing up when it has finished, and the Monitor shows friendlier names for W-OS's own programs.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14f-beta",
       "version": "1.1.51",
       "kind": "feature",

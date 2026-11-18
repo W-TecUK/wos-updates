@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-11-18c-beta",
+      "version": "1.1.59",
+      "kind": "feature",
+      "size": 1091404,
+      "sha256": "7760311b2f1fb5083fa850a357b7e4868791514c2893f7804fb9907b45ffd3a0",
+      "signature": "ViIbbNlGoTOAC4Ipc2tcivrlH2ar76F0s1rN2MTYLRi8PbvsOiX+sByUraOKfM9fkqAEoaxP+SaytpHUBxCfCQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-11-18c-beta.tar.gz",
+      "notes": "Bluetooth now pairs and connects in one go, shows what it is doing, tells you plainly why it failed, and switches sound to your headphones.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-11-18b-beta",
       "version": "1.1.58",
       "kind": "feature",

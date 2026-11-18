@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-11-18d-beta",
+      "version": "1.1.60",
+      "kind": "feature",
+      "size": 1091905,
+      "sha256": "61b3de646ae050e12911738bef0be0d0ec74625d0f1b657041040ef55343348b",
+      "signature": "v7kcbCr1xCoO/knYeefLCFUcalbBw0n2xIHz2CTZP6ukkY7tDPqfZSE6uUgyPBKOUbcyMYhteSxcXDlcDY1oDg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-11-18d-beta.tar.gz",
+      "notes": "The Now Playing pill on the dock shows up the moment something starts playing, names the app and the track, and follows the player that started last.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-11-18c-beta",
       "version": "1.1.59",
       "kind": "feature",

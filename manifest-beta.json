@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-11-18b-beta",
+      "version": "1.1.58",
+      "kind": "feature",
+      "size": 1088823,
+      "sha256": "20817ca85f26ae932e9b253d8d367ac1b67fc37a51f7a0553003184eaa0add8c",
+      "signature": "b/I6h43w6jl7H0MhI1n2LaLEjLYSKD75ifwomtneLSfxG6on0vBNAGQXLsPp4OSb2n4A5OwOZINUooWwbU0VBQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-11-18b-beta.tar.gz",
+      "notes": "The Updates page now shows just the newest update. The calendar widget uses short day names. The dock, Music and the cleaner App Store from the last beta are unchanged.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-11-18a-beta",
       "version": "1.1.57",
       "kind": "feature",

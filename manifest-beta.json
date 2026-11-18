@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-11-18a-beta",
+      "version": "1.1.57",
+      "kind": "feature",
+      "size": 1088864,
+      "sha256": "048e0e8035f4c87c4ce4d8cc77976387ca9449bb45934479478e24503d92b9a0",
+      "signature": "lL5NUof0TEv6+mmROK3Lb+phUVRzZUevdCSri/IFgFuTmBED6xI5luD/ETbdnlVDEaydcL884ftH08AILmm9CQ==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-11-18a-beta.tar.gz",
+      "notes": "A calmer, faster W-OS: the new dock with Join and Morph styles, a Music app, standard folders in Files, Firefox and your usual default apps, a cleaner App Store, and an update-restart prompt.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-10-14k-beta",
       "version": "1.1.56",
       "kind": "feature",

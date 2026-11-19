@@ -1,6 +1,18 @@
 {
   "packages": [
     {
+      "id": "feature-2026-11-19a-beta",
+      "version": "1.1.61",
+      "kind": "feature",
+      "size": 1098242,
+      "sha256": "b8485b6aac7a16832742c002eb3ccd5f320cd93e0ba32eb6e8cbfd2faf2cf32b",
+      "signature": "bNrXv8xgWmEY9Eq/ONeMqinXVPuZx65CZHFF/MG1dkKGnwui5gHHGPyv6NuPgmT4X8T0gpa88u++FdWT0ZcPBg==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-11-19a-beta.tar.gz",
+      "notes": "The first big feature update with a curtain-up screen: a darker, crisper look with no blue, a dock that can float without a panel, Now Playing that names the app and track, Bluetooth that says what it is doing, and a simpler Updates page.",
+      "rollback_available": true,
+      "experience": "theatre"
+    },
+    {
       "id": "feature-2026-11-18d-beta",
       "version": "1.1.60",
       "kind": "feature",

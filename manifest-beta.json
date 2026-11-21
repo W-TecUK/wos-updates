@@ -1,6 +1,17 @@
 {
   "packages": [
     {
+      "id": "feature-2026-11-20a-beta",
+      "version": "1.1.64",
+      "kind": "feature",
+      "size": 1096216,
+      "sha256": "2e586b5e7cc6fe750ddf35fa98d034e1b92329c234fe702dac23f266d893a2ac",
+      "signature": "hndBcxlzOiB5/7lmFme0Ggdq9r1wEPAQdqamWMd+Zv49TvLCwhQHxDwdGy4Gx2mcSwo/7C1ja/ulpzz+xGULCA==",
+      "url": "https://w-tecuk.github.io/wos-updates/feature-2026-11-20a-beta.tar.gz",
+      "notes": "Removed the colour wallpapers and the unfinished menu items. The Windermere photo is the only wallpaper.",
+      "rollback_available": true
+    },
+    {
       "id": "feature-2026-11-19b-beta",
       "version": "1.1.62",
       "kind": "feature",

@@ -9,14 +9,20 @@ const web = require('./web');
 const wmail = require('./wmail');
 
 const PORT = parseInt(process.env.PORT || '9000', 10);
-const privHex = process.env.GATEWAY_PRIV;
+const fs = require('fs');
+const KEY_FILE = process.env.KEY_FILE || '/data/gateway.key';
+let privHex = process.env.GATEWAY_PRIV;
+if (!privHex || privHex.length !== 64) {
+  try { privHex = fs.readFileSync(KEY_FILE, 'utf8').trim(); } catch (e) { privHex = ''; }
+}
 if (!privHex || privHex.length !== 64) {
   const kp = wtp.newKeypair();
-  console.log('No GATEWAY_PRIV set. Example key pair (set GATEWAY_PRIV to the private hex, put the public hex in the OS):');
-  console.log('PRIV=' + kp.priv.toString('hex'));
-  console.log('PUB =' + kp.pub.toString('hex'));
-  process.exit(1);
+  privHex = kp.priv.toString('hex');
+  try { fs.mkdirSync(require('path').dirname(KEY_FILE), { recursive: true }); fs.writeFileSync(KEY_FILE, privHex, { mode: 0o600 }); }
+  catch (e) { console.log('Cannot save key file (' + e.message + '). Mount a volume or set GATEWAY_PRIV.'); process.exit(1); }
+  console.log('Generated a new gateway key (private half saved to the key file only).');
 }
+console.log('GATEWAY PUBLIC KEY = ' + wtp.rawPub(require('node:crypto').createPublicKey(wtp.privFromRaw(Buffer.from(privHex, 'hex')))).toString('hex'));
 const STATIC_PRIV = Buffer.from(privHex, 'hex');
 const MAX_FRAME_PLAIN = 7900;
 const MAX_CONN_PER_IP = 6, MAX_CONN_PER_MIN_PER_IP = 20, MAX_CMD_PER_MIN = 90, MAX_REQ_BYTES = 6000, IDLE_MS = 15 * 60 * 1000;

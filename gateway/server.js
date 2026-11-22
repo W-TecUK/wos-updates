@@ -8,6 +8,7 @@ const wtp = require('./wtp');
 const web = require('./web');
 const wmail = require('./wmail');
 const jenny = require('./jenny');
+const conv = require('./convert');
 
 
 async function place(q) {
@@ -103,6 +104,8 @@ const server = net.createServer(sock => {
     try {
       let out;
       if (cmd === 'HELLO') out = 'OK wos-gateway 1';
+      else if (cmd === 'GETFILE') out = await web.fetchFile(args[0] || '');
+      else if (cmd === 'CONVERT') out = 'OK\n' + conv.convert((args[0] || '').trim(), args.slice(1).join('\n'));
       else if (cmd === 'SHOWS') out = shows();
       else if (cmd === 'NEWS') out = await news();
       else if (cmd === 'PLACE') out = await place(args[0] || '');

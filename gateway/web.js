@@ -85,4 +85,18 @@ async function fetchPage(url) {
   if (!/html|xml/i.test(ct) && ct) return 'ERR This kind of page cannot be shown (' + ct.split(';')[0] + ')';
   return simplify(body, cur);
 }
-module.exports = { fetchPage, isPrivate };
+async function fetchFile(url) {
+  url = url.trim(); if (!/^[a-z]+:\/\//i.test(url)) url = 'https://' + url;
+  let res; let cur = url;
+  for (let i = 0; i < 6; i++) {
+    res = await getOnce(cur);
+    if ([301, 302, 303, 307, 308].includes(res.status) && res.headers.location) { cur = new URL(res.headers.location, cur).href; continue; }
+    break;
+  }
+  if (res.status >= 400) throw new Error('The address replied ' + res.status);
+  if (res.body.length > 30000) throw new Error('That file is bigger than 30 KB. W-OS 2 files can be up to 32 KB.');
+  const b = res.body;
+  if (b.length > 3 && ((b[0] === 0x4d && b[1] === 0x5a) || (b[0] === 0x7f && b[1] === 0x45) || (b[0] === 0x50 && b[1] === 0x4b))) throw new Error('That is a program or archive, not a text file. Whistling Birdy brings in text files only.');
+  return 'OK\n' + b.toString('utf8').replace(/\r/g, '').replace(/[^\n\t\x20-\x7e\u00a3]/g, ' ');
+}
+module.exports = { fetchPage, fetchFile, isPrivate };

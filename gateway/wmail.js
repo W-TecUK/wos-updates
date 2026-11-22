@@ -25,9 +25,10 @@ async function handle(cmd, a, s) {
       return 'OK\nFROM ' + clean(r.from, 100) + '\nTO ' + clean((r.to || []).join(', '), 150) + '\nSUBJECT ' + clean(r.subject, 150) + '\nDATE ' + clean(r.date, 40) + '\nATTACH ' + (r.attachments || []).length + '\n\n' + text; }
     case 'MSEND': { await call('POST', '/api/v1/mail/send', need(s), { to: clean(a[0], 300), subject: clean(a[1], 200), text: a.slice(2).join('\n').slice(0, 20000) }); return 'OK'; }
     case 'MDEL': { await call('POST', '/api/v1/mail/messages/' + encodeURIComponent(clean(a[0])) + '/move', need(s), { folder: clean(a[1] || 'INBOX'), to: 'Trash' }); return 'OK'; }
-    case 'CHATS': { const r = await call('GET', '/api/v1/messages/threads', need(s)); return 'OK\n' + JSON.stringify(r).slice(0, 7000); }
-    case 'CHAT': { const r = await call('GET', '/api/v1/messages?with=' + encodeURIComponent(clean(a[0])), need(s)); return 'OK\n' + JSON.stringify(r).slice(0, 7000); }
-    case 'CHATSEND': { await call('POST', '/api/v1/messages', need(s), { to: clean(a[0]), body: clean(a.slice(1).join('\n'), 2000) }); return 'OK'; }
+    case 'CHATS': { const r = await call('GET', '/api/v1/messages/threads', need(s)); return 'OK\n' + r.map(t => [clean(t.email, 80), clean(t.name || '', 40), clean(t.last, 80), t.fromMe ? '1' : '0', t.unread || 0].join('\t')).join('\n'); }
+    case 'CHAT': { const r = await call('GET', '/api/v1/messages?with=' + encodeURIComponent(clean(a[0])), need(s)); const m = (r.messages || []).slice(-40);
+      return 'OK\n' + m.map(x => [x.fromMe ? '1' : '0', clean(x.body, 300)].join('\t')).join('\n'); }
+    case 'CHATSEND': { await call('POST', '/api/v1/messages', need(s), { to: clean(a[0]), body: clean(a.slice(1).join(' '), 1000) }); return 'OK'; }
     default: return 'ERR Unknown command';
   }
 }

@@ -7,6 +7,33 @@ const dns = require('node:dns').promises;
 const wtp = require('./wtp');
 const web = require('./web');
 const wmail = require('./wmail');
+const jenny = require('./jenny');
+
+
+async function place(q) {
+  q = String(q).replace(/[\r\n\t]+/g, ' ').slice(0, 100).trim();
+  if (!q) throw new Error('Type a place name');
+  const res = await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=6&q=' + encodeURIComponent(q), { headers: { 'user-agent': 'WOS2-gateway/1.0 (maps text search)' }, signal: AbortSignal.timeout(15000) });
+  if (!res.ok) throw new Error('The place search is not answering');
+  const j = await res.json();
+  return 'OK\n' + j.map(p => String(p.display_name || '').replace(/[^\x20-\x7e\u00a3]/g, ' ').slice(0, 150) + '\t' + Number(p.lat).toFixed(4) + '\t' + Number(p.lon).toFixed(4)).join('\n');
+}
+
+let newsCache = { t: 0, v: '' };
+async function news() {
+  if (Date.now() - newsCache.t < 5 * 60 * 1000 && newsCache.v) return newsCache.v;
+  const res = await fetch('https://feeds.bbci.co.uk/news/rss.xml', { signal: AbortSignal.timeout(15000) });
+  if (!res.ok) throw new Error('The news feed is not answering');
+  const xml = await res.text();
+  const dec = x => x.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/[^\x20-\x7e\u00a3]/g, ' ').trim();
+  const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, 20).map(m => {
+    const t = (m[1].match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '';
+    const d = (m[1].match(/<description>([\s\S]*?)<\/description>/) || [])[1] || '';
+    return dec(t).slice(0, 100) + '\t' + dec(d).slice(0, 200);
+  });
+  newsCache = { t: Date.now(), v: 'OK\n' + items.join('\n') };
+  return newsCache.v;
+}
 
 const PORT = parseInt(process.env.PORT || '9000', 10);
 const fs = require('fs');
@@ -69,7 +96,10 @@ const server = net.createServer(sock => {
     try {
       let out;
       if (cmd === 'HELLO') out = 'OK wos-gateway 1';
+      else if (cmd === 'NEWS') out = await news();
+      else if (cmd === 'PLACE') out = await place(args[0] || '');
       else if (cmd === 'FETCH') out = await web.fetchPage(args[0] || '');
+      else if (cmd.startsWith('J')) { out = await jenny.handle(cmd, args, session); if (out === null) out = 'ERR Unknown command'; }
       else out = await wmail.handle(cmd, args, session);
       send('L', out);
     } catch (e) { send('L', 'ERR ' + String(e && e.message || e).slice(0, 200)); }

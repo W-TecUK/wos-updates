@@ -1,1 +1,9 @@
-[]
+[
+ {
+  "title": "W-TV test card",
+  "about": "Made by the gateway to check that video and sound work. Not a real show.",
+  "free": true,
+  "lavfi": "testsrc=size=320x180:rate=8:duration=30",
+  "lavfiAudio": "sine=frequency=440:sample_rate=8000:duration=30"
+ }
+]

@@ -8,13 +8,15 @@ function ffmpegPath() { try { return require('ffmpeg-static') || 'ffmpeg'; } cat
 function shows() { try { return JSON.parse(fs.readFileSync(path.join(__dirname, 'shows.json'), 'utf8')); } catch { return []; } }
 function prepare(i) {
   if (jobs.has(i)) return jobs.get(i);
-  const s = shows()[i]; if (!s || !s.url) throw new Error('No such show');
+  const s = shows()[i]; if (!s || !(s.url || s.lavfi)) throw new Error('No such show');
   const vf = path.join(dir, 'v' + i + '.raw'), af = path.join(dir, 'a' + i + '.raw');
   const job = { state: 'preparing', vf, af, err: '' };
   jobs.set(i, job);
-  const p = spawn(ffmpegPath(), ['-y', '-loglevel', 'error', '-i', s.url, '-t', String(MAXSEC),
+  const src = s.lavfi ? ['-f', 'lavfi', '-i', s.lavfi, '-f', 'lavfi', '-i', s.lavfiAudio || 'anullsrc=r=8000:cl=mono'] : ['-i', s.url];
+  const aMap = s.lavfi ? '1:a:0' : '0:a:0?';
+  const p = spawn(ffmpegPath(), ['-y', '-loglevel', 'error', ...src, '-t', String(MAXSEC),
     '-map', '0:v:0', '-vf', 'fps=' + FPS + ',scale=' + FW + ':' + FH + ':flags=fast_bilinear,format=rgb8', '-f', 'rawvideo', vf,
-    '-map', '0:a:0?', '-ac', '1', '-ar', '8000', '-f', 'u8', af]);
+    '-map', aMap, '-ac', '1', '-ar', '8000', '-f', 'u8', af]);
   let err = ''; p.stderr.on('data', d => { err += d; });
   p.on('error', e => { job.state = 'failed'; job.err = 'Video is not available on this gateway'; });
   p.on('close', code => { if (code === 0) job.state = 'ready'; else { job.state = 'failed'; job.err = 'This show could not be prepared'; jobs.delete(i); } });

@@ -9,6 +9,7 @@ const web = require('./web');
 const wmail = require('./wmail');
 const jenny = require('./jenny');
 const conv = require('./convert');
+const video = require('./video');
 
 
 async function place(q) {
@@ -24,7 +25,7 @@ function shows() {
   let list = [];
   try { list = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'shows.json'), 'utf8')); } catch {}
   const c = x => String(x ?? '').replace(/[\t\r\n]+/g, ' ').slice(0, 200);
-  return 'OK\n' + list.map(s => [c(s.title), c(s.about), s.free ? 'Free' : 'W-Life'].join('\t')).join('\n');
+  return 'OK\n' + list.map((s, i) => [c(s.title), c(s.about), s.free ? 'Free' : 'W-Life', String(i)].join('\t')).join('\n');
 }
 
 let newsCache = { t: 0, v: '' };
@@ -85,7 +86,7 @@ const server = net.createServer(sock => {
   const session = { token: null, email: null, cmds: [] };
   const hsTimer = setTimeout(() => { if (!keys) sock.destroy(); }, 10000);
   function send(status, text) {
-    const body = Buffer.from(text, 'utf8');
+    const body = Buffer.isBuffer(text) ? text : Buffer.from(text, 'utf8');
     let off = 0; const parts = [];
     do { parts.push(body.subarray(off, off + MAX_FRAME_PLAIN)); off += MAX_FRAME_PLAIN; } while (off < body.length);
     parts.forEach((p, i) => {
@@ -106,6 +107,8 @@ const server = net.createServer(sock => {
       if (cmd === 'HELLO') out = 'OK wos-gateway 1';
       else if (cmd === 'GETFILE') out = await web.fetchFile(args[0] || '');
       else if (cmd === 'CONVERT') out = 'OK\n' + conv.convert((args[0] || '').trim(), args.slice(1).join('\n'));
+      else if (cmd === 'VINFO') out = video.info(parseInt(args[0], 10) || 0);
+      else if (cmd === 'VCHUNK') out = video.chunk(parseInt(args[0], 10) || 0, parseInt(args[1], 10) || 0);
       else if (cmd === 'SHOWS') out = shows();
       else if (cmd === 'NEWS') out = await news();
       else if (cmd === 'PLACE') out = await place(args[0] || '');

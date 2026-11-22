@@ -19,6 +19,13 @@ async function place(q) {
   return 'OK\n' + j.map(p => String(p.display_name || '').replace(/[^\x20-\x7e\u00a3]/g, ' ').slice(0, 150) + '\t' + Number(p.lat).toFixed(4) + '\t' + Number(p.lon).toFixed(4)).join('\n');
 }
 
+function shows() {
+  let list = [];
+  try { list = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'shows.json'), 'utf8')); } catch {}
+  const c = x => String(x ?? '').replace(/[\t\r\n]+/g, ' ').slice(0, 200);
+  return 'OK\n' + list.map(s => [c(s.title), c(s.about), s.free ? 'Free' : 'W-Life'].join('\t')).join('\n');
+}
+
 let newsCache = { t: 0, v: '' };
 async function news() {
   if (Date.now() - newsCache.t < 5 * 60 * 1000 && newsCache.v) return newsCache.v;
@@ -96,6 +103,7 @@ const server = net.createServer(sock => {
     try {
       let out;
       if (cmd === 'HELLO') out = 'OK wos-gateway 1';
+      else if (cmd === 'SHOWS') out = shows();
       else if (cmd === 'NEWS') out = await news();
       else if (cmd === 'PLACE') out = await place(args[0] || '');
       else if (cmd === 'FETCH') out = await web.fetchPage(args[0] || '');

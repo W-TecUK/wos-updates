@@ -29,6 +29,12 @@ async function handle(cmd, a, s) {
     case 'CHAT': { const r = await call('GET', '/api/v1/messages?with=' + encodeURIComponent(clean(a[0])), need(s)); const m = (r.messages || []).slice(-40);
       return 'OK\n' + m.map(x => [x.fromMe ? '1' : '0', clean(x.body, 300)].join('\t')).join('\n'); }
     case 'CHATSEND': { await call('POST', '/api/v1/messages', need(s), { to: clean(a[0]), body: clean(a.slice(1).join(' '), 1000) }); return 'OK'; }
+    case 'DEVICES': { const r = await call('GET', '/api/v1/devices', need(s));
+      const row = (d, mine) => [clean(d.id, 40), clean(d.name, 40), mine ? 'Yours' : clean(d.owner || 'Family', 30), clean(d.kind || '', 12), d.battery == null ? '' : d.battery + '%', d.lastSeen ? new Date(d.lastSeen).toISOString().slice(0, 16).replace('T', ' ') : '', d.location ? Number(d.location.lat).toFixed(4) : '', d.location ? Number(d.location.lon).toFixed(4) : ''].join('\t');
+      return 'OK\n' + [...(r.mine || []).map(d => row(d, true)), ...(r.family || []).map(d => row(d, false))].join('\n'); }
+    case 'DRING': { await call('POST', '/api/v1/devices/' + encodeURIComponent(clean(a[0], 60)) + '/ring', need(s), {}); return 'OK'; }
+    case 'DREG': { await call('POST', '/api/v1/devices/register', need(s), { deviceKey: clean(a[0], 64), name: clean(a[1], 60), kind: 'computer', os: 'W-OS 2', model: clean(a[2], 60) }); return 'OK'; }
+    case 'DCHK': { const r = await call('POST', '/api/v1/devices/checkin', need(s), { deviceKey: clean(a[0], 64), findEnabled: true, shareWithFamily: false, charging: null }); return 'OK' + ((r.actions || []).includes('ring') ? ' RING' : ''); }
     default: return 'ERR Unknown command';
   }
 }

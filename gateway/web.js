@@ -43,10 +43,12 @@ function getOnce(urlStr) {
   });
 }
 const ENT = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', pound: '£', euro: '€', copy: '©', reg: '®', hellip: '...', ndash: '-', mdash: '-', lsquo: "'", rsquo: "'", ldquo: '"', rdquo: '"', bull: '*', middot: '.' };
+const LAT = 'agrave:à aacute:á acirc:â atilde:ã auml:ä aring:å aelig:æ ccedil:ç egrave:è eacute:é ecirc:ê euml:ë igrave:ì iacute:í icirc:î iuml:ï ntilde:ñ ograve:ò oacute:ó ocirc:ô otilde:õ ouml:ö oslash:ø ugrave:ù uacute:ú ucirc:û uuml:ü yacute:ý yuml:ÿ szlig:ß Agrave:À Aacute:Á Acirc:Â Atilde:Ã Auml:Ä Aring:Å AElig:Æ Ccedil:Ç Egrave:È Eacute:É Ecirc:Ê Euml:Ë Igrave:Ì Iacute:Í Icirc:Î Iuml:Ï Ntilde:Ñ Ograve:Ò Oacute:Ó Ocirc:Ô Otilde:Õ Ouml:Ö Oslash:Ø Ugrave:Ù Uacute:Ú Ucirc:Û Uuml:Ü iexcl:¡ iquest:¿ laquo:« raquo:» deg:° plusmn:± times:× divide:÷ cent:¢ yen:¥ sect:§ para:¶ micro:µ frac12:½ frac14:¼ frac34:¾';
+const LATM = {}; for (const p of LAT.split(' ')) { const i = p.indexOf(':'); LATM[p.slice(0, i)] = p.slice(i + 1); }
 function decode(s) {
-  return s.replace(/&#x([0-9a-f]+);|&#(\d+);|&([a-z]+);/gi, (m, h, d, n) => {
-    if (h || d) { const c = parseInt(h || d, h ? 16 : 10); return c < 128 || c === 163 ? String.fromCharCode(c) : (c === 8217 || c === 8216 ? "'" : c === 8220 || c === 8221 ? '"' : c === 8211 || c === 8212 ? '-' : ' '); }
-    return ENT[n.toLowerCase()] ?? ' ';
+  return s.replace(/&#x([0-9a-f]+);|&#(\d+);|&([a-z0-9]+);/gi, (m, h, d, n) => {
+    if (h || d) { const c = parseInt(h || d, h ? 16 : 10); return c > 0 && c < 0x110000 ? String.fromCodePoint(c) : ' '; }
+    return ENT[n] ?? LATM[n] ?? ENT[n.toLowerCase()] ?? ' ';
   });
 }
 function simplify(html, baseUrl) {
@@ -64,12 +66,14 @@ function simplify(html, baseUrl) {
   for (const raw of decode(h).split('\n')) {
     let t = raw; let kind = 'P';
     if (t.startsWith('#H ')) { kind = 'H'; t = t.slice(3); } else if (t.startsWith('#L ')) { kind = 'LI'; t = t.slice(3); } else if (t.startsWith('#P ')) t = t.slice(3);
-    t = t.replace(/#[HLP] /g, ' ').replace(/[^\x20-\x7e£]/g, ' ').replace(/\s+/g, ' ').trim();
+    t = norm(t.replace(/#[HLP] /g, ' ')).replace(/\s+/g, ' ').trim();
     if (t) lines.push(kind + ' ' + t);
     if (lines.length > 900) break;
   }
-  return 'OK\nTITLE ' + (title || baseUrl) + '\n' + lines.join('\n') + '\n' + links.map((l, i) => 'LINK ' + (i + 1) + ' ' + l).join('\n');
+  return 'OK\nTITLE ' + norm(title || baseUrl) + '\n' + lines.join('\n') + '\n' + links.map((l, i) => 'LINK ' + (i + 1) + ' ' + l).join('\n');
 }
+const norm = t => String(t).replace(/[‘’‚′]/g, "'").replace(/[“”„″]/g, '"').replace(/[–—−]/g, '-').replace(/…/g, '...').replace(/[  -​ ]/g, ' ').replace(/•/g, '-')
+  .replace(/[ŁłĐđıİĦħ]/g, c => ({'Ł':'L','ł':'l','Đ':'D','đ':'d','ı':'i','İ':'I','Ħ':'H','ħ':'h'})[c]).replace(/[Ā-˿Ḁ-ỿ]/g, c => c.normalize('NFD').replace(/[̀-ͯ]/g, '')).replace(/[^\x20-\x7e¡-ÿ]/g, ' ');
 async function fetchPage(url) {
   url = url.trim(); if (!/^[a-z]+:\/\//i.test(url)) url = 'https://' + url;
   let res; let cur = url;
@@ -81,7 +85,7 @@ async function fetchPage(url) {
   if (res.status >= 400) return 'ERR The page replied ' + res.status;
   const ct = String(res.headers['content-type'] || '');
   const body = res.body.toString(/charset=iso-8859-1/i.test(ct) ? 'latin1' : 'utf8');
-  if (/text\/plain/i.test(ct)) return 'OK\nTITLE ' + cur + '\n' + body.split('\n').slice(0, 900).map(l => 'P ' + l.replace(/[^\x20-\x7e]/g, ' ')).join('\n') + '\n';
+  if (/text\/plain/i.test(ct)) return 'OK\nTITLE ' + cur + '\n' + body.split('\n').slice(0, 900).map(l => 'P ' + norm(l)).join('\n') + '\n';
   if (!/html|xml/i.test(ct) && ct) return 'ERR This kind of page cannot be shown (' + ct.split(';')[0] + ')';
   return simplify(body, cur);
 }
@@ -97,6 +101,6 @@ async function fetchFile(url) {
   if (res.body.length > 30000) throw new Error('That file is bigger than 30 KB. W-OS 2 files can be up to 32 KB.');
   const b = res.body;
   if (b.length > 3 && ((b[0] === 0x4d && b[1] === 0x5a) || (b[0] === 0x7f && b[1] === 0x45) || (b[0] === 0x50 && b[1] === 0x4b))) throw new Error('That is a program or archive, not a text file. Whistling Birdy brings in text files only.');
-  return 'OK\n' + b.toString('utf8').replace(/\r/g, '').replace(/[^\n\t\x20-\x7e\u00a3]/g, ' ');
+  return 'OK\n' + b.toString('utf8').replace(/\r/g, '').replace(/[^\n\t\x20-\x7e£]/g, ' ');
 }
-module.exports = { fetchPage, fetchFile, isPrivate };
+module.exports = { fetchPage, fetchFile, isPrivate, simplify };
